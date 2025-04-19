@@ -4,7 +4,9 @@ export const Languages = () => (
 
     <div className="px-4 py-2 grid grid-cols-2 gap-x-2">
       <div>🇫🇷 Français</div>
-      <div className="text-gray-400">native</div>
+      <div className="text-gray-400">
+        <span className="text-xs">native</span>
+      </div>
       <div>🇬🇧 English</div>
       <div className="text-gray-400">
         C2<span className="text-xs">, proficient</span>

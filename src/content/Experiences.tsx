@@ -8,7 +8,7 @@ import { ogury } from "../assets/content/experiences/ogury";
 import { accengage } from "../assets/content/experiences/accengage";
 
 export const Experiences = () => (
-  <div className="flex flex-col gap-8">
+  <div className="flex flex-col m-auto max-w-6xl gap-8">
     <ExperienceWrap {...spendesk} />
     <ExperienceWrap {...masteos} />
     <ExperienceWrap {...earlyBirds} />

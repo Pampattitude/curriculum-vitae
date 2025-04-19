@@ -11,8 +11,12 @@
       @apply list-disc;
     }
 
-    b {
-      @apply font-bold;
+    strong {
+      @apply font-semibold;
+    }
+
+    em > strong {
+      @apply font-bold not-italic;
     }
 
     i {
@@ -20,8 +24,7 @@
     }
 
     code {
-      @apply text-[0.9em];
-      @apply px-0.5;
+      @apply text-[0.95em] bg-gray-300 text-red-800 rounded-sm px-1 py-0.25;
     }
   }
 }

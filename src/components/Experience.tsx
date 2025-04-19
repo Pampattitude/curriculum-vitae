@@ -1,14 +1,17 @@
+import { Brand } from "./Brand";
 import { Tag } from "./Tag";
 import { KnownHashes } from "./TagGauge";
 
 export type ExperienceProps = {
-  // icon?: string;
   company: string;
-  companyUrl?: string;
+  companyUrl: string;
+  companyLogo: string;
   position: string | string[];
   dates: { start: Date; end?: Date };
   location: "paris" | string;
   tags?: Record<KnownHashes | string, string[]>;
+} & {
+  className?: string;
 } & React.PropsWithChildren;
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
@@ -20,32 +23,43 @@ export const Experience = ({
   // icon,
   company,
   companyUrl,
+  companyLogo,
   position,
   dates,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   location,
   tags,
   children,
+  className,
   ...rest
 }: ExperienceProps) => (
   <div {...rest}>
-    <header className="px-4 py-2 border-l-4 border-gray-800">
+    <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex gap-2">
+        <div className="flex gap-4 text-lg">
           <div className="font-bold">
             {Array.isArray(position)
               ? position.map((p) => <div key={p}>{p}</div>)
               : position}
           </div>
           <div className="shrink-0">
-            @{" "}
-            {companyUrl ? (
-              <a target="_blank" href={companyUrl}>
-                {company}
-              </a>
-            ) : (
-              company
-            )}
+            <div className="inline-flex flex-nowrap gap-2 items-center">
+              {companyUrl ? (
+                <a
+                  className="inline-flex flex-nowrap gap-1 items-center"
+                  target="_blank"
+                  href={companyUrl}
+                >
+                  <Brand src={companyLogo} alt={company} />
+                  <span className="inline-block">{company}</span>
+                </a>
+              ) : (
+                <>
+                  <span className="inline-block">@</span>
+                  <span className="inline-block">{company}</span>
+                </>
+              )}
+            </div>
           </div>
         </div>
 
@@ -67,8 +81,8 @@ export const Experience = ({
           )}
         </div>
       )}
-    </header>
-    <div className="px-8 py-2 ml-[3px] border-l-1 border-gray-800">
+    </div>
+    <div className="px-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400">
       {children}
     </div>
   </div>

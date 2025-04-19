@@ -4,6 +4,7 @@ export const data: ExperienceProps = {
   position: "Engineering Team Lead",
   company: "Spendesk",
   companyUrl: "https://www.spendesk.com/",
+  companyLogo: "/src/assets/images/logo-spendesk.png",
   dates: {
     start: new Date("2022-11"),
   },
@@ -12,7 +13,7 @@ export const data: ExperienceProps = {
     lang: ["TypeScript"],
     fram: ["React", "Fastify"],
     db: ["PostgreSQL", "MySQL"],
-    misc: ['Docker', 'Terraform', 'Kubernetes', 'Notion', 'Google Sheets'],
+    misc: ["Docker", "Terraform", "Kubernetes", "Notion", "Google Sheets"],
     prov: ["AWS"],
   },
 };

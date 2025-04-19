@@ -1,3 +1,5 @@
+<header>MISSION STATEMENT</header>
+
 As `Team Lead`:
 
 - leading a 3-person squad responsible for Client Tools
@@ -11,3 +13,5 @@ As `Fullstack Developer`:
 - the React configuration app for clients (legacy maintenance & evolution, remade from scratch using React)
 - the Early Birds UI kit in React
 - team work organization as Scrum master
+
+<footer>WHY I LEFT</footer>

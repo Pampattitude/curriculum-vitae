@@ -5,6 +5,31 @@ export const Skills = () => (
     <h2>Skills</h2>
 
     <section>
+      <h3>Methodology</h3>
+      <div className="flex flex-wrap gap-2">
+        <TagGauge hash="meth" factor={0.9}>
+          Scrum
+        </TagGauge>
+        <TagGauge hash="meth" factor={0.8}>
+          Kanban
+        </TagGauge>
+        <TagGauge
+          hash="meth"
+          tooltip="Specific, Measurable, Achievable, Relevant, Time-bound"
+          factor={0.6}
+        >
+          SMART
+        </TagGauge>
+        <TagGauge hash="meth" tooltip="Objective Key Results" factor={1}>
+          OKR
+        </TagGauge>
+        <TagGauge hash="meth" tooltip="Challenge Actions Results" factor={1}>
+          CAR
+        </TagGauge>
+      </div>
+    </section>
+
+    <section>
       <h3>Languages</h3>
       <div className="flex flex-wrap gap-2">
         <TagGauge hash="lang" factor={0.9}>
@@ -52,13 +77,13 @@ export const Skills = () => (
     <section>
       <h3>Tools</h3>
       <div className="flex flex-wrap gap-2">
-        <TagGauge hash="misc" factor={0.7}>
+        <TagGauge hash="tool" factor={0.7}>
           Docker
         </TagGauge>
-        <TagGauge hash="misc" factor={0.5}>
+        <TagGauge hash="tool" factor={0.5}>
           Kubernetes
         </TagGauge>
-        <TagGauge hash="misc" factor={0.4}>
+        <TagGauge hash="tool" factor={0.4}>
           Terraform
         </TagGauge>
       </div>

@@ -1,16 +1,27 @@
+import { epitech } from "../assets/content/education/epitech";
+import { Brand } from "../components/Brand";
+import { Md } from "../components/Md";
+
 export const Education = () => (
   <div>
     <h2>Education</h2>
 
     <div className="flex justify-between gap-2">
       <div>
-        <a className="text-blue-200 hover:text-blue-400 active:text-blue-600 transition-colors" target="_blank" href="https://epitech.eu/">
-          Epitech
+        <a
+          className="inline-flex flex-nowrap gap-1 items-center"
+          target="_blank"
+          href="https://epitech.eu/"
+        >
+          <Brand src="/src/assets/images/logo-epitech.png" alt="Epitech" />
+          <span className="inline-block">Epitech</span>
         </a>
       </div>
       <div className="text-gray-200 text-sm">2013</div>
     </div>
 
-    <div>Master in Information Technology</div>
+    <div className="text-sm">
+      <Md>{epitech.content}</Md>
+    </div>
   </div>
 );

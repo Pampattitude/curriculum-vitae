@@ -36,6 +36,8 @@ const knownHashes = {
   fram: "bg-orange-600",
   db: "bg-purple-600",
   prov: "bg-pink-600",
+  meth: "bg-sky-600",
+  tool: "bg-yellow-600",
   misc: "bg-green-600",
 } as const;
 
@@ -51,12 +53,14 @@ const getColorFromString = (str: string) => {
 
 export type TagGaugeProps = React.PropsWithChildren & {
   hash?: string;
+  tooltip?: string;
   factor: number;
   className?: string;
 };
 
 export const TagGauge = ({
   hash,
+  tooltip,
   factor,
   className,
   children,
@@ -66,10 +70,12 @@ export const TagGauge = ({
     {...rest}
     className={[
       "text-xs min-w-8 inline-flex relative px-2 py-1 rounded-md overflow-hidden",
+      tooltip ? "cursor-help" : "cursor-default",
       className,
     ]
       .filter((c) => c)
       .join(" ")}
+    title={tooltip}
   >
     <div className="absolute top-0 left-0 w-full h-full z-0 saturate-[50%]">
       <div className="w-full h-full flex">
@@ -83,12 +89,12 @@ export const TagGauge = ({
 
         <div
           style={{ flexBasis: `${100 - Math.round(factor * 100)}%` }}
-          className="bg-gray-400 bg-blend-difference basis-full w-auto h-full"
+          className="bg-gray-600 bg-blend-difference basis-full w-auto h-full"
         />
       </div>
     </div>
 
-    <div className="z-10 w-full text-center text-white text-shadow-white mix-blend-overlay saturate-200">
+    <div className="z-10 w-full text-center text-white text-shadow-white">
       {children}
     </div>
   </div>

@@ -2,11 +2,10 @@
 
 @layer base {
   html {
-    @apply w-screen;
-    @apply min-h-screen;
-    /* @apply overflow-auto; */
-    @apply bg-gray-800;
-    @apply text-gray-200;
+    @apply w-screen min-h-screen bg-gray-800 text-gray-200 subpixel-antialiased;
+    font-family:
+      system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 }
 
@@ -28,14 +27,26 @@
 
   /* Does not work for base layer for some reason */
   a {
-    @apply text-blue-800;
-    @apply transition-colors;
+    @apply text-blue-800 transition-colors;
 
     &:hover {
       @apply text-blue-600;
     }
     &:active {
-      @apply text-blue-400;
+      @apply text-blue-500;
+    }
+
+    .layout > header &,
+    .layout > footer &,
+    .layout > main > nav & {
+      @apply text-blue-400 transition-colors;
+
+      &:hover {
+        @apply text-blue-600;
+      }
+      &:active {
+        @apply text-blue-700;
+      }
     }
   }
 }
