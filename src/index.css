@@ -1,8 +1,41 @@
 @import "tailwindcss";
 
-body,
-#root {
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
+@layer base {
+  html {
+    @apply w-screen;
+    @apply min-h-screen;
+    /* @apply overflow-auto; */
+    @apply bg-gray-800;
+    @apply text-gray-200;
+  }
+}
+
+@layer components {
+  h1,
+  h2,
+  h3 {
+    @apply text-white;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+
+  /* Does not work for base layer for some reason */
+  a {
+    @apply text-blue-800;
+    @apply transition-colors;
+
+    &:hover {
+      @apply text-blue-600;
+    }
+    &:active {
+      @apply text-blue-400;
+    }
+  }
 }

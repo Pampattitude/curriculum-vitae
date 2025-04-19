@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer components {
+  .markdown {
+    ul,
+    ol {
+      @apply pl-6;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+
+    b {
+      @apply font-bold;
+    }
+
+    i {
+      @apply italic;
+    }
+
+    code {
+      @apply text-[0.9em];
+      @apply px-0.5;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer components {
+  .content {
+    @apply bg-gray-200;
+    @apply text-gray-800;
+  }
+}

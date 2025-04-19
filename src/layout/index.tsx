@@ -3,9 +3,9 @@ import { Header } from "./Header";
 import { Main } from "./Main";
 
 export const Layout = () => (
-    <div className="w-full h-full bg-gray-800 text-white">
-        <Header />
-        <Main />
-        <Footer />
-    </div>
-)
+  <div className="min-h-full flex flex-col">
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+);
