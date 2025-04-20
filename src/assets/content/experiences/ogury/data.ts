@@ -10,11 +10,5 @@ export const data: ExperienceProps = {
     end: new Date("2017-12"),
   },
   location: "Paris, FR",
-  tags: {
-    lang: ["Node.js"],
-    fram: ["Ruby on Rails"],
-    db: ["Redis", "PostgreSQL"],
-    prov: ["AWS"],
-    misc: ["Travis", "Docker"],
-  },
+  tags: ["node", "ror", "redis", "pgsql", "aws", "travis", "docker"],
 };

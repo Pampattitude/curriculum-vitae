@@ -1,6 +1,6 @@
+import { Fragment } from "react/jsx-runtime";
 import { Brand } from "./Brand";
-import { Tag } from "./Tag";
-import { KnownHashes } from "./TagGauge";
+import { KnownSkillName, SkillTag } from "./SkillTag";
 
 export type ExperienceProps = {
   company: string;
@@ -9,7 +9,7 @@ export type ExperienceProps = {
   position: string | string[];
   dates: { start: Date; end?: Date };
   location: "paris" | string;
-  tags?: Record<KnownHashes | string, string[]>;
+  tags: KnownSkillName[];
 } & {
   className?: string;
 } & React.PropsWithChildren;
@@ -20,7 +20,6 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
 });
 
 export const Experience = ({
-  // icon,
   company,
   companyUrl,
   companyLogo,
@@ -30,7 +29,6 @@ export const Experience = ({
   location,
   tags,
   children,
-  className,
   ...rest
 }: ExperienceProps) => (
   <div {...rest}>
@@ -72,13 +70,11 @@ export const Experience = ({
       {/* <div>{location}</div> */}
       {tags && (
         <div className="flex flex-wrap gap-2">
-          {Object.keys(tags).map((hash) =>
-            tags[hash].map((tag) => (
-              <Tag key={tag} hash={hash}>
-                {tag}
-              </Tag>
-            )),
-          )}
+          {tags.map((tag) => (
+            <Fragment key={tag.toString()}>
+              <SkillTag kind="light" full skill={tag} />
+            </Fragment>
+          ))}
         </div>
       )}
     </div>

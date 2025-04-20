@@ -1,4 +1,4 @@
-import { TagGauge } from "../components/TagGauge";
+import { SkillTag } from "../components/SkillTag";
 
 export const Skills = () => (
   <div className="flex flex-col gap-1">
@@ -7,97 +7,63 @@ export const Skills = () => (
     <section>
       <h3>Methodology</h3>
       <div className="flex flex-wrap gap-2">
-        <TagGauge hash="meth" factor={0.9}>
-          Scrum
-        </TagGauge>
-        <TagGauge hash="meth" factor={0.8}>
-          Kanban
-        </TagGauge>
-        <TagGauge
-          hash="meth"
-          tooltip="Specific, Measurable, Achievable, Relevant, Time-bound"
-          factor={0.6}
-        >
-          SMART
-        </TagGauge>
-        <TagGauge hash="meth" tooltip="Objective Key Results" factor={1}>
-          OKR
-        </TagGauge>
-        <TagGauge hash="meth" tooltip="Challenge Actions Results" factor={1}>
-          CAR
-        </TagGauge>
+        <SkillTag skill="scrum" />
+        <SkillTag skill="kanban" />
+        <SkillTag skill="smart" />
+        <SkillTag skill="okr" />
+        <SkillTag skill="car" />
+      </div>
+    </section>
+
+    <section>
+      <h3>Project support</h3>
+      <div className="flex flex-wrap gap-2">
+        <SkillTag skill="notion" />
+        <SkillTag skill="gSheets" />
+        <SkillTag skill="jira" />
+        <SkillTag skill="cultureAmp" />
+        <SkillTag skill="dustAi" />
+      </div>
+    </section>
+
+    <section>
+      <h3>Cloud providers</h3>
+      <div className="flex flex-wrap gap-2">
+        <SkillTag skill="aws" />
+        <SkillTag skill="gcp" />
       </div>
     </section>
 
     <section>
       <h3>Languages</h3>
       <div className="flex flex-wrap gap-2">
-        <TagGauge hash="lang" factor={0.9}>
-          Typescript
-        </TagGauge>
-        <TagGauge hash="lang" factor={0.8}>
-          JavaScript
-        </TagGauge>
-        <TagGauge hash="lang" factor={0.6}>
-          C#
-        </TagGauge>
-        <TagGauge hash="lang" factor={0.3}>
-          Python
-        </TagGauge>
+        <SkillTag skill="ts" />
+        <SkillTag skill="js" />
       </div>
     </section>
 
     <section>
       <h3>Frameworks</h3>
       <div className="flex flex-wrap gap-2">
-        <TagGauge hash="fram" factor={0.9}>
-          React
-        </TagGauge>
+        <SkillTag skill="react" />
       </div>
     </section>
 
     <section>
       <h3>Databases</h3>
       <div className="flex flex-wrap gap-2">
-        <TagGauge hash="db" factor={0.8}>
-          PostgreSQL
-        </TagGauge>
-        <TagGauge hash="db" factor={0.8}>
-          MongoDB
-        </TagGauge>
-        <TagGauge hash="db" factor={0.6}>
-          MySQL
-        </TagGauge>
-        <TagGauge hash="db" factor={0.5}>
-          BigQuery
-        </TagGauge>
+        <SkillTag skill="pgsql" />
+        <SkillTag skill="mongo" />
+        <SkillTag skill="bigQuery" />
       </div>
     </section>
 
     <section>
       <h3>Tools</h3>
       <div className="flex flex-wrap gap-2">
-        <TagGauge hash="tool" factor={0.7}>
-          Docker
-        </TagGauge>
-        <TagGauge hash="tool" factor={0.5}>
-          Kubernetes
-        </TagGauge>
-        <TagGauge hash="tool" factor={0.4}>
-          Terraform
-        </TagGauge>
-      </div>
-    </section>
-
-    <section>
-      <h3>Misc.</h3>
-      <div className="flex flex-wrap gap-2">
-        <TagGauge hash="misc" factor={0.9}>
-          Notion
-        </TagGauge>
-        <TagGauge hash="misc" factor={0.8}>
-          Google Sheets
-        </TagGauge>
+        <SkillTag skill="docker" />
+        <SkillTag skill="kube" />
+        <SkillTag skill="terraform" />
       </div>
     </section>
   </div>

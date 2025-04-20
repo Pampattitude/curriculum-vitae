@@ -10,5 +10,5 @@ export const data: ExperienceProps = {
     end: new Date("2013-02"),
   },
   location: "Le Kremlin-Bicêtre, FR",
-  tags: { lang: ["C++", "C#", "LaTeX"] },
+  tags: ["cpp", "cSharp", "latex"],
 };

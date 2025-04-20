@@ -9,10 +9,5 @@ export const data: ExperienceProps = {
     start: new Date("2022-11"),
   },
   location: "Neuilly-sur-Seine, FR",
-  tags: {
-    lang: ["Node.js", "HTML5"],
-    fram: ["EJS", "Express", "Bootstrap"],
-    db: ["MongoDB", "Mongoose"],
-    prov: ["AWS"],
-  },
+  tags: ["node", "html", "express", "bootstrap", "mongo", "mongoose", "aws"],
 };

@@ -10,11 +10,15 @@ export const data: ExperienceProps = {
     end: new Date("2020-12"),
   },
   location: "Paris, FR",
-  tags: {
-    lang: ["TypeScript"],
-    fram: ["React"],
-    db: ["MongoDB", "PostgreSQL", "BigQuery"],
-    misc: ["Pub/Sub", "Kubernetes"],
-    prov: ["GCP"],
-  },
+  tags: [
+    "confluence",
+    "ts",
+    "react",
+    "mongo",
+    "pgsql",
+    "bigQuery",
+    "pubSub",
+    "kube",
+    "gcp",
+  ],
 };

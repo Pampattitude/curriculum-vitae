@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@source inline("text-red-{50..900}");
+@source inline("bg-red-{50..900}");
+
+@source inline("text-orange-{50..900}");
+@source inline("bg-orange-{50..900}");
+
+@source inline("text-yellow-{50..900}");
+@source inline("bg-yellow-{50..900}");
+
+@source inline("text-lime-{50..900}");
+@source inline("bg-lime-{50..900}");
+
+@source inline("text-green-{50..900}");
+@source inline("bg-green-{50..900}");
+
+@source inline("text-emerald-{50..900}");
+@source inline("bg-emerald-{50..900}");
+
+@source inline("text-teal-{50..900}");
+@source inline("bg-teal-{50..900}");
+
+@source inline("text-cyan-{50..900}");
+@source inline("bg-cyan-{50..900}");
+
+@source inline("text-sky-{50..900}");
+@source inline("bg-sky-{50..900}");
+
+@source inline("text-blue-{50..900}");
+@source inline("bg-blue-{50..900}");
+
+@source inline("text-indigo-{50..900}");
+@source inline("bg-indigo-{50..900}");
+
+@source inline("text-violet-{50..900}");
+@source inline("bg-violet-{50..900}");
+
+@source inline("text-purple-{50..900}");
+@source inline("bg-purple-{50..900}");
+
+@source inline("text-fuchsia-{50..900}");
+@source inline("bg-fuchsia-{50..900}");
+
+@source inline("text-pink-{50..900}");
+@source inline("bg-pink-{50..900}");
+
+@source inline("text-rose-{50..900}");
+@source inline("bg-rose-{50..900}");
+
+@source inline("text-slate-{50..900}");
+@source inline("bg-slate-{50..900}");

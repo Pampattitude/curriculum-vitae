@@ -12,40 +12,49 @@ const hashCode = (str: string): number => {
   return hash;
 };
 
+const STRENGTH_BG = 600 as const;
+const STRENGTH_BG_LIGHT = 500 as const;
+const STRENGTH_TEXT = 400 as const;
+const STRENGTH_TEXT_LIGHT = 100 as const;
+const STRENGTH_WHITE_TEXT = 100 as const;
+const STRENGTH_WHITE_TEXT_LIGHT = 100 as const;
+const STRENGTH_WHITE_BG = 600 as const;
+const STRENGTH_WHITE_BG_LIGHT = 300 as const;
+
 const COLORS: React.HTMLAttributes<HTMLSpanElement>["className"][] = [
-  "bg-red-600",
-  "bg-orange-600",
-  "bg-yellow-600",
-  "bg-lime-600",
-  "bg-green-600",
-  "bg-emerald-600",
-  "bg-teal-600",
-  "bg-cyan-600",
-  "bg-sky-600",
-  "bg-blue-600",
-  "bg-indigo-600",
-  "bg-violet-600",
-  "bg-purple-600",
-  "bg-fuchsia-600",
-  "bg-pink-600",
-  "bg-rose-600",
+  "red",
+  "orange",
+  "yellow",
+  "lime",
+  "green",
+  "emerald",
+  "teal",
+  "cyan",
+  "sky",
+  "blue",
+  "indigo",
+  "violet",
+  "purple",
+  "fuchsia",
+  "pink",
+  "rose",
 ];
 
-const knownHashes = {
-  lang: "bg-blue-600",
-  fram: "bg-orange-600",
-  db: "bg-purple-600",
-  prov: "bg-pink-600",
-  meth: "bg-sky-600",
-  tool: "bg-yellow-600",
-  misc: "bg-green-600",
+const KNOWN_HASHES = {
+  lang: "blue",
+  fram: "orange",
+  db: "purple",
+  prov: "pink",
+  meth: "sky",
+  tool: "yellow",
+  supp: "green",
 } as const;
 
-export type KnownHashes = keyof typeof knownHashes;
+export type KNOWN_HASHES = keyof typeof KNOWN_HASHES;
 
 const getColorFromString = (str: string) => {
-  if (knownHashes[str as keyof typeof knownHashes]) {
-    return knownHashes[str as keyof typeof knownHashes];
+  if (KNOWN_HASHES[str as keyof typeof KNOWN_HASHES]) {
+    return KNOWN_HASHES[str as keyof typeof KNOWN_HASHES];
   }
   const hash = hashCode(str);
   return COLORS[Math.abs(hash) % COLORS.length];
@@ -53,6 +62,7 @@ const getColorFromString = (str: string) => {
 
 export type TagGaugeProps = React.PropsWithChildren & {
   hash?: string;
+  kind?: "light" | "dark";
   tooltip?: string;
   factor: number;
   className?: string;
@@ -60,42 +70,59 @@ export type TagGaugeProps = React.PropsWithChildren & {
 
 export const TagGauge = ({
   hash,
+  kind = "dark",
   tooltip,
   factor,
   className,
   children,
   ...rest
-}: TagGaugeProps) => (
-  <div
-    {...rest}
-    className={[
-      "text-xs min-w-8 inline-flex relative px-2 py-1 rounded-md overflow-hidden",
-      tooltip ? "cursor-help" : "cursor-default",
-      className,
-    ]
-      .filter((c) => c)
-      .join(" ")}
-    title={tooltip}
-  >
-    <div className="absolute top-0 left-0 w-full h-full z-0 saturate-[50%]">
-      <div className="w-full h-full flex">
-        <div
-          style={{ flexBasis: `${Math.round(factor * 100)}%` }}
-          className={[
-            `h-full`,
-            getColorFromString(hash ?? children?.toString() ?? ""),
-          ].join(" ")}
-        />
+}: TagGaugeProps) => {
+  const light = kind === "light";
+  const color = getColorFromString(hash ?? "");
 
-        <div
-          style={{ flexBasis: `${100 - Math.round(factor * 100)}%` }}
-          className="bg-gray-600 bg-blend-difference basis-full w-auto h-full"
-        />
+  console.log(light);
+
+  const textStrength = light ? STRENGTH_TEXT_LIGHT : STRENGTH_TEXT;
+  const textColor = `text-${color}-${textStrength}`;
+
+  const bgStrength = light ? STRENGTH_BG_LIGHT : STRENGTH_BG;
+  const bgColor = `bg-${color}-${bgStrength}`;
+
+  const whiteTextStrength = light
+    ? STRENGTH_WHITE_TEXT_LIGHT
+    : STRENGTH_WHITE_TEXT;
+  const whiteTextColor = `text-slate-${whiteTextStrength}`;
+
+  const whiteBgStrength = light ? STRENGTH_WHITE_BG_LIGHT : STRENGTH_WHITE_BG;
+  const whiteBgColor = `bg-slate-${whiteBgStrength}`;
+
+  return (
+    <div
+      {...rest}
+      className={[
+        "text-xs min-w-8 inline-flex relative rounded-md overflow-hidden saturate-50",
+        tooltip ? "cursor-help" : "cursor-default",
+        className,
+      ]
+        .filter((c) => c)
+        .join(" ")}
+      title={tooltip}
+    >
+      <div
+        style={{ width: `calc(${Math.round(factor * 100)}%)` }}
+        className={`absolute text-nowrap top-0 left-0 ${bgColor} w-[${Math.round(factor * 100)}%] overflow-hidden ${whiteTextColor}`}
+      >
+        <div className=" px-2 py-0.5">{children}</div>
+      </div>
+
+      <div
+        className={[
+          `${textColor}`,
+          `px-2 py-0.5 text-nowrap ${whiteBgColor} overflow-hidden`,
+        ].join(" ")}
+      >
+        {children}
       </div>
     </div>
-
-    <div className="z-10 w-full text-center text-white text-shadow-white">
-      {children}
-    </div>
-  </div>
-);
+  );
+};
