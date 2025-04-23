@@ -35,6 +35,7 @@
   /* Does not work for base layer for some reason */
   a {
     @apply text-blue-800 transition-colors;
+    @apply underline;
 
     &:hover {
       @apply text-blue-600;
