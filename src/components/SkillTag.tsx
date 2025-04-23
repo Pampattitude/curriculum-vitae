@@ -16,8 +16,8 @@ export const SkillTag = ({
   full = false,
 }: {
   skill: KnownSkillName;
-  kind: TagGaugeProps["kind"];
-  full: boolean;
+  kind?: TagGaugeProps["kind"];
+  full?: boolean;
 }) => {
   const knownSkill: KnownSkill = KNOWN_SKILLS[skill];
 
