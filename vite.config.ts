@@ -23,4 +23,16 @@ export default defineConfig({
       usePolling: true,
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"],
+          'react-markdown': ["react-markdown"],
+          rehype: ["rehype-raw", "rehype-remark"],
+          tailwindcss: ['tailwindcss'],
+        },
+      },
+    },
+  },
 });
