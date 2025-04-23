@@ -13,7 +13,7 @@ export const Header = () => (
         >
           <img
             src={picture}
-            alt="picture"
+            alt="Profile picture"
             className="w-[48px] h-[48px] lg:w-[64px] lg:h-[64px] object-cover"
           />
         </a>

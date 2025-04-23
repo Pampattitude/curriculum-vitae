@@ -49,7 +49,7 @@ export const Experience = ({
                   target="_blank"
                   href={companyUrl}
                 >
-                  <Brand src={companyLogo} alt={company} />
+                  <Brand src={companyLogo} alt="Logo" />
                   <span className="inline-block">{company}</span>
                 </a>
               ) : (
