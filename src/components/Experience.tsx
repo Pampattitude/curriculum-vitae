@@ -10,7 +10,7 @@ export type ExperienceProps = {
   dates: { start: Date; end?: Date };
   location: "paris" | string;
   tags: KnownSkillName[];
-  hiddenTags: KnownSkillName[]; // TMP?
+  hiddenTags?: KnownSkillName[]; // TMP?
 } & {
   className?: string;
 } & React.PropsWithChildren;
