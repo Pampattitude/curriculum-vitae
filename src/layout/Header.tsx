@@ -1,7 +1,7 @@
 import markdown from "../assets/header.md";
 import { Md } from "../components/Md";
 
-import picture from '/picture.webp';
+import picture from '/picture.jpg';
 
 export const Header = () => (
   <header className="flex gap-8 p-4 items-center">
@@ -9,12 +9,12 @@ export const Header = () => (
       <div>
         <a
           href="/"
-          className="block rounded-[50%] overflow-hidden outline-2 outline-gray-200"
+          className="block rounded-[50%] w-20 h-20 overflow-hidden outline-2 outline-gray-200"
         >
           <img
             src={picture}
             alt="picture"
-            className="w-20 h-20"
+            className="h-fit object-cover"
           />
         </a>
       </div>
