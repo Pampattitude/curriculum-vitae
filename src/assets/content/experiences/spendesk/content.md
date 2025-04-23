@@ -1,14 +1,20 @@
-<header>MISSION STATEMENT</header>
+<header><b>Mission statement</b>: build a squad around the <i>Finance Controller</i> persona, maintain and bring innovation to the platform around said persona, and manage career progress and technical excellence for the squad members.</header>
 
-_New pricing & packaging_ project:
+Created two squads (_Finance Controller_, _Ecosystem Integrations_) and joined an existing one (_Customer Operations_), in accordance with the various PDE reorganizations.
+
+_New pricing & packaging_ project (_Customer Operations_):
 
 <car>
-  <cha>replace team lead in existing team lacking a project manager, and release new price & packaging (<i>P&P</i>) (~1y dev)</cha>
-  <act>organized testing sessions w/ stakeholders</act>
-  <res>±10% mean revenue increase for new customers</res>
+<cha>replace team lead in existing team lacking a project manager, and release new price & packaging (<i>P&P</i>) (~1y dev)</cha>
+<act>organized testing sessions w/ stakeholders</act>
+<res>
+  
+  <strong>±10% mean revenue increase</strong> from new customers
+  
+</res>
 </car>
 
-_HR integrations_ feature:
+_HR integrations_ feature (_Ecosystem Integrations_):
 
 <car>
   <cha>create a new squad, release high-stakes HR integrations feature in under 6 months, build foundations for improvements</cha>

@@ -37,7 +37,7 @@ export const Experience = ({
         <div className="flex gap-4 text-lg">
           <div className="font-bold">
             {Array.isArray(position)
-              ? position.map((p) => <div key={p}>{p}</div>)
+              ? <div>{position.map((p, index) => <Fragment key={p}><span>{p}</span>{index!=position.length - 1 ? ', ': ''}</Fragment>)}</div>
               : position}
           </div>
           <div className="shrink-0">
