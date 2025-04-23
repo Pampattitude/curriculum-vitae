@@ -3,7 +3,7 @@
 _Grow the team_:
 
 <car>
-<cha></cha>
+<cha>Grow the team following a round of fundraising</cha>
 <act>
 
   - ramped up recruitment externally (recruitment network) and internally (People Partners)

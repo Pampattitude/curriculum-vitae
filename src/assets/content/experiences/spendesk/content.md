@@ -6,12 +6,13 @@ _New pricing & packaging_ project (_Customer Operations_):
 
 <car>
 <cha>replace team lead in existing team lacking a project manager, and release new price & packaging (<i>P&P</i>) (~1y dev)</cha>
-<act>organized testing sessions w/ stakeholders</act>
-<res>
-  
-  <strong>±10% mean revenue increase</strong> from new customers
-  
-</res>
+<act>
+
+  - restructured and re-prioritized left-to-do with engineers
+  - organized testing sessions with stakeholders
+
+</act>
+<res><strong>±10% mean revenue increase</strong> from new customers</res>
 </car>
 
 _HR integrations_ feature (_Ecosystem Integrations_):
