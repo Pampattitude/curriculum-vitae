@@ -13,8 +13,8 @@ const hashCode = (str: string): number => {
 };
 
 const STRENGTH_BG = 600 as const;
-const STRENGTH_BG_LIGHT = 500 as const;
-const STRENGTH_TEXT = 400 as const;
+const STRENGTH_BG_LIGHT = 600 as const;
+const STRENGTH_TEXT = 300 as const;
 const STRENGTH_TEXT_LIGHT = 100 as const;
 const STRENGTH_WHITE_TEXT = 100 as const;
 const STRENGTH_WHITE_TEXT_LIGHT = 100 as const;
