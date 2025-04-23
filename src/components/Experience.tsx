@@ -1,4 +1,4 @@
-import { Fragment } from "preact/jsx-runtime";
+import { Fragment } from "preact";
 import { Brand } from "./Brand";
 import { KnownSkillName, SkillTag } from "./SkillTag";
 
