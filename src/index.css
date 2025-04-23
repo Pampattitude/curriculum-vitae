@@ -2,6 +2,11 @@
 
 @import "./colors.css";
 
+@page {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 @layer base {
   html {
     @apply w-screen min-h-screen bg-slate-800 text-slate-200 subpixel-antialiased;

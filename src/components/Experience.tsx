@@ -10,6 +10,7 @@ export type ExperienceProps = {
   dates: { start: Date; end?: Date };
   location: "paris" | string;
   tags: KnownSkillName[];
+  hiddenTags: KnownSkillName[]; // TMP?
 } & {
   className?: string;
 } & React.PropsWithChildren;
@@ -67,9 +68,8 @@ export const Experience = ({
           {dates.end ? dateFormatter.format(dates.end) : <i>now</i>}
         </div>
       </div>
-      {/* <div>{location}</div> */}
       {tags && (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 print:gap-y-0.5">
           {tags.map((tag) => (
             <Fragment key={tag.toString()}>
               <SkillTag kind="light" full skill={tag} />
@@ -78,7 +78,7 @@ export const Experience = ({
         </div>
       )}
     </div>
-    <div className="px-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400">
+    <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400">
       {children}
     </div>
   </div>

@@ -80,8 +80,6 @@ export const TagGauge = ({
   const light = kind === "light";
   const color = getColorFromString(hash ?? "");
 
-  console.log(light);
-
   const textStrength = light ? STRENGTH_TEXT_LIGHT : STRENGTH_TEXT;
   const textColor = `text-${color}-${textStrength}`;
 
@@ -110,7 +108,7 @@ export const TagGauge = ({
     >
       <div
         style={{ width: `calc(${Math.round(factor * 100)}%)` }}
-        className={`absolute text-nowrap top-0 left-0 ${bgColor} w-[${Math.round(factor * 100)}%] overflow-hidden ${whiteTextColor}`}
+        className={`print:hidden absolute text-nowrap top-0 left-0 ${bgColor} w-[${Math.round(factor * 100)}%] overflow-hidden ${whiteTextColor}`}
       >
         <div className=" px-2 py-0.5">{children}</div>
       </div>
@@ -118,7 +116,7 @@ export const TagGauge = ({
       <div
         className={[
           `${textColor}`,
-          `px-2 py-0.5 text-nowrap ${whiteBgColor} overflow-hidden`,
+          ` px-2 py-0.5 text-nowrap ${whiteBgColor} overflow-hidden print:w-full print:p-0 print:bg-none`,
         ].join(" ")}
       >
         {children}

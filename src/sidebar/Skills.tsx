@@ -1,7 +1,7 @@
 import { SkillTag } from "../components/SkillTag";
 
 export const Skills = () => (
-  <div className="flex flex-col gap-1">
+  <div className="print:hidden flex flex-col gap-1">
     <h2>Skills</h2>
 
     <section>
