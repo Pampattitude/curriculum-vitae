@@ -30,7 +30,6 @@ export default defineConfig({
           react: ["react", "react-dom"],
           'react-markdown': ["react-markdown"],
           rehype: ["rehype-raw", "rehype-remark"],
-          tailwindcss: ['tailwindcss'],
         },
       },
     },
