@@ -11,8 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "preact": "^10.26.5",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
     "rehype-remark": "^10.0.1",
@@ -33,5 +32,8 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
+  },
+  "moduleNameMapper": {
+    "^react/jsx-runtime$": "preact/jsx-runtime"
   }
 }

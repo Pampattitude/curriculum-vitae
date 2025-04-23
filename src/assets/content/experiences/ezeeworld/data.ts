@@ -8,7 +8,8 @@ export const data: ExperienceProps = {
   companyUrl: "https://www.ezeeworld.com",
   companyLogo,
   dates: {
-    start: new Date("2022-11"),
+    start: new Date("2013-12"),
+    end: new Date("2015-01"),
   },
   location: "Neuilly-sur-Seine, FR",
   tags: ["node", "html", "express", "bootstrap", "mongo", "mongoose", "aws"],

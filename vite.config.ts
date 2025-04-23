@@ -23,13 +23,20 @@ export default defineConfig({
       usePolling: true,
     },
   },
+  resolve: {
+    alias: {
+      react: "preact/compat",
+      "react-dom": "preact/compat",
+    },
+  },
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
-          react: ["react", "react-dom"],
-          'react-markdown': ["react-markdown"],
-          rehype: ["rehype-raw", "rehype-remark"],
+          preact: ["preact"],
+          "react-markdown": ["react-markdown"],
+          "rehype-raw": ["rehype-raw"],
+          "rehype-remark": ["rehype-remark"],
         },
       },
     },

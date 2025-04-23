@@ -1,4 +1,4 @@
-import { Fragment } from "react/jsx-runtime";
+import { Fragment } from "preact/jsx-runtime";
 import { Brand } from "./Brand";
 import { KnownSkillName, SkillTag } from "./SkillTag";
 
@@ -38,7 +38,7 @@ export const Experience = ({
         <div className="flex gap-4 text-lg">
           <div className="font-bold">
             {Array.isArray(position)
-              ? <div>{position.map((p, index) => <Fragment key={p}><span>{p}</span>{index!=position.length - 1 ? ', ': ''}</Fragment>)}</div>
+              ? <div>{position.map((p, index) => <Fragment key={p}><span>{p}</span>{index!=position.length - 1 ? ' → ': ''}</Fragment>)}</div>
               : position}
           </div>
           <div className="shrink-0">

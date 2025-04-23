@@ -1,6 +1,6 @@
 <header>
 
-<b>`Team Lead` mission statement</b>: create the first squad of the Engineering team and build and maintain the customer console webapp.
+<b>Team Lead mission statement</b>: create the first squad of the Engineering team and build and maintain the customer console webapp.
 
 </header>
 
@@ -11,7 +11,7 @@
 
 <header>
 
-<b>`Fullstack Developer` mission statement</b>: develop and maintain tools on the existing customer console webapp and API.
+<b>Fullstack Developer mission statement</b>: develop and maintain tools on the existing customer console webapp and API.
 
 </header>
 
