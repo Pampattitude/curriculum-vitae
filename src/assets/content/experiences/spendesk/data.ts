@@ -1,10 +1,12 @@
 import { ExperienceProps } from "../../../../components/Experience";
 
+import companyLogo from '/images/logo-spendesk.png';
+
 export const data: ExperienceProps = {
   position: "Engineering Team Lead",
   company: "Spendesk",
   companyUrl: "https://www.spendesk.com/",
-  companyLogo: "/src/assets/images/logo-spendesk.png",
+  companyLogo,
   dates: {
     start: new Date("2022-11"),
   },

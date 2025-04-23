@@ -2,6 +2,8 @@ import { epitech } from "../assets/content/education/epitech";
 import { Brand } from "../components/Brand";
 import { Md } from "../components/Md";
 
+import epitechLogo from '/images/logo-epitech.png';
+
 export const Education = () => (
   <div>
     <h2>Education</h2>
@@ -13,7 +15,7 @@ export const Education = () => (
           target="_blank"
           href="https://epitech.eu/"
         >
-          <Brand src="/src/assets/images/logo-epitech.png" alt="Epitech" />
+          <Brand src={epitechLogo} alt="Epitech" />
           <span className="inline-block">Epitech</span>
         </a>
       </div>

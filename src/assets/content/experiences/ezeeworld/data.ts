@@ -1,10 +1,12 @@
 import { ExperienceProps } from "../../../../components/Experience";
 
+import companyLogo from '/images/logo-ezeeworld.png';
+
 export const data: ExperienceProps = {
   position: "Fullstack Developer",
   company: "Ezeeworld",
   companyUrl: "https://www.ezeeworld.com",
-  companyLogo: "/src/assets/images/logo-ezeeworld.png",
+  companyLogo,
   dates: {
     start: new Date("2022-11"),
   },

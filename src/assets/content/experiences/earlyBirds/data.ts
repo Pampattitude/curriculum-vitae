@@ -1,10 +1,12 @@
 import { ExperienceProps } from "../../../../components/Experience";
 
+import companyLogo from '/images/logo-earlybirds.png';
+
 export const data: ExperienceProps = {
   position: ["Fullstack Developer", "Team Lead"],
   company: "Early Birds",
   companyUrl: "https://www.crownpeak.com/",
-  companyLogo: "/src/assets/images/logo-earlybirds.png",
+  companyLogo,
   dates: {
     start: new Date("2018-01"),
     end: new Date("2020-12"),
