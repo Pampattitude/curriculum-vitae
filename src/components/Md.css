@@ -29,7 +29,7 @@
 
     header,
     footer {
-      @apply text-[1.2em] italic;
+      @apply text-[1.15em] italic;
     }
     header {
       @apply mb-1;
