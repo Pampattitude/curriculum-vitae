@@ -36,6 +36,10 @@ export default defineConfig({
     },
   },
   build: {
+    emptyOutDir: true,
+    minify: process.env.NODE_ENV === "prod" ? "esbuild" : false,
+    cssMinify: process.env.NODE_ENV === "prod",
+    cssCodeSplit: true,
     rollupOptions: {
       output: {
         manualChunks: {
