@@ -1,0 +1,20 @@
+{
+  "short_name": "CV Delahodde G.",
+  "name": "CV Delahodde Guillaume",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.webp",
+      "type": "image/webp",
+      "sizes": "64x64",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme_color": "#1D293D",
+  "background_color": "#1D293D",
+  "offline_enabled": true
+}

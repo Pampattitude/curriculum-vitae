@@ -1,0 +1,8 @@
+/* TEAM */
+Your title: Guillaume "Pampa" Delahodde
+Site: pampattitu.de
+Twitter: @Pampattitude
+Location: France
+
+/* SITE */
+Components: React, Vite
