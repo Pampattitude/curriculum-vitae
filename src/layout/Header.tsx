@@ -1,7 +1,7 @@
 import { ReactComponent } from "../assets/header.md";
 import { Md } from "../components/Md";
 
-import picture from '../assets/picture.jpg';
+import picture from "../assets/picture.jpg";
 
 export const Header = () => (
   <header className="flex gap-4 lg:gap-8 p-4 items-center">
@@ -20,6 +20,8 @@ export const Header = () => (
       </div>
     </div>
 
-    <ReactComponent MyComponent={Md} />
+    <Md>
+      <ReactComponent />
+    </Md>
   </header>
 );

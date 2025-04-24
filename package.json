@@ -18,6 +18,8 @@
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-react": "^7.26.3",
     "@eslint/js": "^9.22.0",
     "@tailwindcss/vite": "^4.1.4",
     "@types/markdown-it": "^14.1.2",
