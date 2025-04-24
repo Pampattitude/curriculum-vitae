@@ -1,3 +1,4 @@
 import { Layout } from "./layout";
 
-export default () => <Layout />;
+const LayoutComponent = () => <Layout />;
+export default LayoutComponent;
