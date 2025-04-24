@@ -11,8 +11,8 @@ export const data: ExperienceProps = {
     start: new Date("2024-02"),
   },
   location: "Paris, FR",
-  // tags: [
-  //   "investment",
-  //   "consulting",
-  // ],
+  tags: [
+    //   "investment",
+    //   "consulting",
+  ],
 };
