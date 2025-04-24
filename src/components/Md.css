@@ -29,7 +29,13 @@
 
     header,
     footer {
-      @apply text-[1.2em] italic mt-2;
+      @apply text-[1.2em] italic;
+    }
+    header {
+      @apply mb-1;
+    }
+    footer {
+      @apply mt-1;
     }
 
     article {
