@@ -1,23 +1,29 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import * as mdPlugin from "vite-plugin-markdown";
+import { analyzer } from "vite-bundle-analyzer";
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    mdPlugin.plugin({
+      mode: [
+        mdPlugin.Mode.REACT,
+        mdPlugin.Mode.HTML,
+        mdPlugin.Mode.MARKDOWN,
+        mdPlugin.Mode.TOC,
+      ],
+      markdownIt: {
+        html: true,
+        linkify: true,
+        typographer: true,
+      },
+    }),
     tailwindcss(),
     react(),
-    // Custom plugin to load markdown files
-    {
-      name: "markdown-loader",
-      transform(code, id) {
-        if (id.slice(-3) === ".md") {
-          // For .md files, get the raw content
-          return `export default ${JSON.stringify(code)};`;
-        }
-      },
-    },
-  ],
+    process.env.ANALYZE ? analyzer() : null,
+  ].filter((c) => c),
   server: {
     watch: {
       usePolling: true,
@@ -27,9 +33,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          react: ["react", "react-dom"],
-          'react-markdown': ["react-markdown"],
-          rehype: ["rehype-raw", "rehype-remark"],
+          react: ["react"],
+          "react-dom": ["react-dom"],
         },
       },
     },

@@ -26,5 +26,32 @@
     code {
       @apply text-[0.95em] bg-gray-300 text-red-800 rounded-sm px-1 py-0.25;
     }
+
+    header,
+    footer {
+      @apply text-[1.2em] italic mt-2;
+    }
+
+    article {
+      > section {
+        &::before {
+          @apply font-bold pl-6;
+        }
+
+        &:nth-child(1)::before {
+          content: "Challenge: ";
+        }
+        &:nth-child(2)::before {
+          content: "Actions: ";
+        }
+        &:nth-child(3)::before {
+          content: "Results: ";
+        }
+
+        ul {
+          @apply pl-12;
+        }
+      }
+    }
   }
 }

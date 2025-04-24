@@ -1,4 +1,4 @@
-import markdown from "../assets/header.md";
+import { ReactComponent } from "../assets/header.md";
 import { Md } from "../components/Md";
 
 import picture from '../assets/picture.jpg';
@@ -20,6 +20,6 @@ export const Header = () => (
       </div>
     </div>
 
-    <Md>{markdown}</Md>
+    <ReactComponent MyComponent={Md} />
   </header>
 );
