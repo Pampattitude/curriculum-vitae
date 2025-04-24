@@ -12,8 +12,8 @@ _Grow the team_:
 </section>
 <section>
 
-  - Engineering grew from **`5`** to **`20`** people by Jan 2022
-  - Engineering **seniority increased** (~5 years average)
+  - engineering grew from **`5`** to **`20`** people by Jan 2022
+  - engineering **seniority increased** (~5 years average)
 
 </section>
 </article>

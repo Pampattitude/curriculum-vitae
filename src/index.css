@@ -9,10 +9,14 @@
 
 @layer base {
   html {
-    @apply w-screen min-h-screen bg-slate-800 text-slate-200 subpixel-antialiased;
+    @apply w-screen min-h-screen bg-slate-800 text-slate-200 subpixel-antialiased print:text-sm;
     font-family:
       system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+      @media print {
+        @apply tracking-tight;
+      }
   }
 }
 
@@ -29,7 +33,7 @@
     @apply text-xl;
   }
   h3 {
-    @apply text-lg;
+    @apply text-[1.0675rem] font-normal;
   }
 
   /* Does not work for base layer for some reason */

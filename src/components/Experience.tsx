@@ -33,7 +33,7 @@ export const Experience = ({
   ...rest
 }: ExperienceProps) => (
   <div {...rest}>
-    <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800">
+    <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 print:py-1">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex gap-4 text-lg">
           <div className="font-bold">
@@ -78,7 +78,7 @@ export const Experience = ({
         </div>
       </div>
       {tags && (
-        <div className="flex flex-wrap gap-2 print:gap-y-0.5">
+        <div className="flex flex-wrap gap-2 print:gap-y-0">
           {tags.map((tag) => (
             <Fragment key={tag.toString()}>
               <SkillTag kind="light" full skill={tag} />
@@ -87,7 +87,7 @@ export const Experience = ({
         </div>
       )}
     </div>
-    <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400">
+    <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 print:border-none print:pt-0">
       {children}
     </div>
   </div>

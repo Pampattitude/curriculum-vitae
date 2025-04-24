@@ -29,7 +29,7 @@
 
     header,
     footer {
-      @apply text-[1.15em] italic;
+      @apply italic not-print:text-[1.15em];
     }
     header {
       @apply mb-1;
@@ -41,7 +41,7 @@
     article {
       > section {
         &::before {
-          @apply font-bold pl-6;
+          @apply font-bold pl-6 print:pl-2;
         }
 
         &:nth-child(1)::before {
@@ -56,6 +56,29 @@
 
         ul {
           @apply pl-12;
+
+          @media print {
+            @apply pl-4;
+
+            > li {
+              @apply inline m-2;
+
+              &:first-of-type {
+                @apply ml-0;
+              }
+
+              &:last-of-type {
+                @apply mr-0;
+              }
+
+              &::before {
+                @apply text-[0.33em] pr-1;
+                content: "● ";
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+          }
         }
       }
     }

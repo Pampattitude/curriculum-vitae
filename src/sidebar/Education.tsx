@@ -19,7 +19,7 @@ export const Education = () => (
           <span className="inline-block">Epitech</span>
         </a>
       </div>
-      <div className="text-gray-200 text-sm">2013</div>
+      <div className="text-gray-300 text-sm">2008&nbsp;&mdash;&nbsp;2013</div>
     </div>
 
     <div className="text-sm">
