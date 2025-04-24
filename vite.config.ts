@@ -29,12 +29,17 @@ export default defineConfig({
       usePolling: true,
     },
   },
+  resolve: {
+    alias: {
+      react: "preact/compat",
+      "react-dom": "preact/compat",
+    },
+  },
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
-          react: ["react"],
-          "react-dom": ["react-dom"],
+          preact: ["preact"],
         },
       },
     },

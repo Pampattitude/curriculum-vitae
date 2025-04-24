@@ -2,9 +2,9 @@
 
 _Grow the team_:
 
-<article>
-<section>Grow the team following a round of fundraising</section>
-<section>
+<car>
+<cha>grow the team following a round of fundraising</cha>
+<act>
 
   - ramped up recruitment externally (recruitment network) and internally (People Partners)
   - restructured recruitment criteria and process
