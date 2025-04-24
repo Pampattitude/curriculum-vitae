@@ -1,6 +1,6 @@
 import { ExperienceProps } from "../../../../components/Experience";
 
-import companyLogo from '/images/logo-earlybirds.png';
+import companyLogo from "/images/logo-earlybirds.png";
 
 export const data: ExperienceProps = {
   position: ["Fullstack Developer", "Team Lead"],

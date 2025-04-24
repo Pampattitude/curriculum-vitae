@@ -1,6 +1,6 @@
 import { ExperienceProps } from "../../../../components/Experience";
 
-import companyLogo from '/images/logo-epitech.png';
+import companyLogo from "/images/logo-epitech.png";
 
 export const data: ExperienceProps = {
   position: ["Permanent Teaching Assistant", "Written Expression Assistant"],

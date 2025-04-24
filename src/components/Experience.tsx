@@ -37,9 +37,18 @@ export const Experience = ({
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex gap-4 text-lg">
           <div className="font-bold">
-            {Array.isArray(position)
-              ? <div>{position.map((p, index) => <Fragment key={p}><span>{p}</span>{index!=position.length - 1 ? ' → ': ''}</Fragment>)}</div>
-              : position}
+            {Array.isArray(position) ? (
+              <div>
+                {position.map((p, index) => (
+                  <Fragment key={p}>
+                    <span>{p}</span>
+                    {index != position.length - 1 ? " → " : ""}
+                  </Fragment>
+                ))}
+              </div>
+            ) : (
+              position
+            )}
           </div>
           <div className="shrink-0">
             <div className="inline-flex flex-nowrap gap-2 items-center">
