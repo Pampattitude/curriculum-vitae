@@ -2,7 +2,7 @@ import { epitech } from "../assets/content/education/epitech";
 import { Brand } from "../components/Brand";
 import { Md } from "../components/Md";
 
-import epitechLogo from "/images/logo-epitech.webp";
+import epitechLogo from "../assets/content/education/epitech/logo.webp";
 
 export const Education = () => (
   <div>

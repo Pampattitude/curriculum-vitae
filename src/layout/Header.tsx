@@ -9,7 +9,7 @@ export const Header = () => (
       <div>
         <a
           href="/"
-          className="block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200"
+          className="block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200 print:outline-gray-800"
         >
           <img
             src={picture}

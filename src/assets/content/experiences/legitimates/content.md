@@ -1,0 +1,1 @@
+<header>Pre-seed / seed startup investment, and technical and financial consulting. We take an active role to help avoid common pitfalls and ensure that technology becomes a driver of success.</header>
