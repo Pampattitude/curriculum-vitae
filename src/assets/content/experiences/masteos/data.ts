@@ -1,6 +1,6 @@
 import { ExperienceProps } from "../../../../components/Experience";
 
-import companyLogo from "/images/logo-masteos.jpg";
+import companyLogo from "/images/logo-masteos.webp";
 
 export const data: ExperienceProps = {
   position: "Head of Engineering",
