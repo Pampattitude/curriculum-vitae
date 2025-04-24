@@ -37,6 +37,6 @@ _HR integrations_ feature (_Ecosystem Integrations_):
 
 <footer>
 
-__Looking for a new opportunity__ in line with my career progress, with a higher focus on employee career progress and long-term commitments.
+Spendesk went through a company downsizing <a href="https://www.lesechos.fr/start-up/ecosysteme/french-tech-la-licorne-spendesk-taille-dans-ses-effectifs-2119722" target="_blank">in 2024</a>, leading to less opportunities for growth.
 
 </footer>

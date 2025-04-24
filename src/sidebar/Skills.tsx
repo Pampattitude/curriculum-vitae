@@ -6,7 +6,7 @@ export const Skills = () => (
 
     <section>
       <h3>Methodology</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="scrum" />
         <SkillTag skill="kanban" />
         <SkillTag skill="smart" />
@@ -17,7 +17,7 @@ export const Skills = () => (
 
     <section>
       <h3>Project support</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="notion" />
         <SkillTag skill="gSheets" />
         <SkillTag skill="jira" />
@@ -28,7 +28,7 @@ export const Skills = () => (
 
     <section>
       <h3>Cloud providers</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="aws" />
         <SkillTag skill="gcp" />
       </div>
@@ -36,7 +36,7 @@ export const Skills = () => (
 
     <section>
       <h3>Languages</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="ts" />
         <SkillTag skill="js" />
       </div>
@@ -44,14 +44,14 @@ export const Skills = () => (
 
     <section>
       <h3>Frameworks</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="react" />
       </div>
     </section>
 
     <section>
       <h3>Databases</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="pgsql" />
         <SkillTag skill="mongo" />
         <SkillTag skill="bigQuery" />
@@ -60,7 +60,7 @@ export const Skills = () => (
 
     <section>
       <h3>Tools</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
         <SkillTag skill="docker" />
         <SkillTag skill="kube" />
         <SkillTag skill="terraform" />
