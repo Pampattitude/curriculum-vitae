@@ -3,7 +3,7 @@ import { ExperienceProps } from "../../../../components/Experience";
 import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
-  position: "Partner",
+  position: "Co-founder",
   company: "Legitimates",
   companyUrl: "https://legitimates.fr/",
   companyLogo,

@@ -41,10 +41,14 @@
       @apply mt-1;
     }
 
-    article {
-      > section {
+    ul.car {
+      @apply list-none pl-2;
+
+      > li {
+        @apply pl-0;
+
         &::before {
-          @apply font-bold pl-6 print:pl-2;
+          @apply font-bold;
         }
 
         &:nth-child(1)::before {
