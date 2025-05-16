@@ -36,7 +36,7 @@ export const KNOWN_SKILLS = {
   js: { name: "JavaScript", kind: "lang", value: 0.8 },
   html: { name: "HTML", kind: "lang", value: 0.9 },
   cpp: { name: "C++", kind: "lang", value: 0.8 },
-  cSharp: { name: "C++", kind: "lang", value: 0.7 },
+  cSharp: { name: "C#", kind: "lang", value: 0.7 },
   latex: { name: "Latex", kind: "lang", value: 0.3 },
 
   node: { name: "Node.js", kind: "fram", value: 0.9 },
