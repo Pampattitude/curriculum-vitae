@@ -8,8 +8,6 @@ export const Brand = ({
     {...(rest as React.PropsWithChildren)}
     className={["inline-block h-[1em]", className].filter((c) => c).join(" ")}
     src={src}
-    srcSet={`${src} 1w`}
-    sizes="((min-width: 1em) and (max-width: 1em)) 1em"
     width="18px"
     height="18px"
     alt={alt}
