@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 
 import { Brand } from "../components/Brand";
 
-import emailNormal from "/public/cntct/-__ -_ -- -_--.normal.webp";
-import emailHover from "/public/cntct/-__ -_ -- -_--.hover.webp";
-import emailActive from "/public/cntct/-__ -_ -- -_--.active.webp";
-import address from "/public/cntct/nqqerff.webp";
+import emailNormal from "/cntct/-__ -_ -- -_--.normal.webp?url";
+import emailHover from "/cntct/-__ -_ -- -_--.hover.webp?url";
+import emailActive from "/cntct/-__ -_ -- -_--.active.webp?url";
+import address from "/cntct/nqqerff.webp?url";
 import linkedInLogo from "../assets/content/contact/linkedin.webp";
 
 export const Contact = () => {
@@ -101,14 +101,16 @@ export const Contact = () => {
             </div>
           </div>
 
-          <a
-            href="//linkedin.com/in/pampattitude/"
-            target="_blank"
-            className="inline-flex items-center gap-1"
-          >
-            <Brand src={linkedInLogo} alt="Logo" />
-            linkedin.com/in/pampattitude
-          </a>
+          <div>
+            <a
+              href="//linkedin.com/in/pampattitude/"
+              target="_blank"
+              className="inline-flex items-center gap-1"
+            >
+              <Brand src={linkedInLogo} alt="Logo" />
+              linkedin.com/in/pampattitude
+            </a>
+          </div>
         </div>
       </div>
     </div>
