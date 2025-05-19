@@ -1,7 +1,5 @@
 /// <reference types="vite/client" />
 
-declare module 'rollup-plugin-css-porter';
-
 declare module "*.md" {
   export type Markdown<Props = object> = {
     attributes: object;
