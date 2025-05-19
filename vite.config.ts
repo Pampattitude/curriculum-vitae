@@ -4,9 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 import * as mdPlugin from "vite-plugin-markdown";
 import { analyzer } from "vite-bundle-analyzer";
 
-// @ts-expect-error miss type declaration
-import cssPorter from "rollup-plugin-css-porter";
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -41,12 +38,9 @@ export default defineConfig({
   build: {
     emptyOutDir: true,
     minify: process.env.NODE_ENV === "prod" ? "esbuild" : false,
-    cssMinify: process.env.NODE_ENV === "prod",
+    cssMinify: process.env.NODE_ENV === "prod" ? "esbuild" : false,
     cssCodeSplit: true,
     rollupOptions: {
-      plugins: [cssPorter({
-        minified: true,
-      })],
       output: {
         manualChunks: {
           preact: ["preact"],
