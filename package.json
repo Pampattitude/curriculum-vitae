@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "analyze": "ANALYZE=true vite build",
     "dev": "vite --host",
     "format": "prettier --write --ignore-unknown .",
     "build": "tsc -b && vite build",

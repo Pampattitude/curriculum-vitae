@@ -77,6 +77,7 @@ export const Contact = () => {
             <div className="grow-0 shrink-0 self-end">
               <button
                 type="button"
+                aria-label="Copy"
                 className="m-auto transition-all cursor-pointer p-0.5 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 active:ring-4 active:outline-none active:ring-gray-100 font-medium rounded-lg text-sm text-center inline-flex items-center dark:active:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
                 onClick={() => {
                   const self = document.getElementById(

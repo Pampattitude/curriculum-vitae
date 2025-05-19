@@ -44,6 +44,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           preact: ["preact"],
+          preactCompat: ["preact/compat"],
         },
       },
     },
