@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import * as mdPlugin from "vite-plugin-markdown";
 import { analyzer } from "vite-bundle-analyzer";
 
-import cssPorter from 'rollup-plugin-css-porter';
+import cssPorter from "rollup-plugin-css-porter";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -43,8 +43,8 @@ export default defineConfig({
     cssMinify: process.env.NODE_ENV === "prod",
     cssCodeSplit: true,
     rollupOptions: {
-  plugins: [ cssPorter() ],
-        output: {
+      plugins: [cssPorter()],
+      output: {
         manualChunks: {
           preact: ["preact"],
         },
