@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import emailNormal from "/public/cntct/-__ -_ -- -_--.normal.png";
 import emailHover from "/public/cntct/-__ -_ -- -_--.hover.png";
 import emailActive from "/public/cntct/-__ -_ -- -_--.active.png";
-import { LinkHTMLAttributes } from "preact/compat";
 
 export const Contact = () => {
   const [content, setContent] = useState(<div />);
