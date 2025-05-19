@@ -13,5 +13,6 @@ export const Brand = ({
     width="18px"
     height="18px"
     alt={alt}
+    loading="lazy"
   />
 );

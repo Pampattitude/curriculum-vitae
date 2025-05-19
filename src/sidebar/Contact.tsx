@@ -32,7 +32,13 @@ export const Contact = () => {
           className={`flex flex-col ${displayContent ? "visible" : "hidden"}`}
         >
           <address className="mt-[4px]">
-            <img width={187.25} height={16} src={address} alt="address" />
+            <img
+              width={187.25}
+              height={16}
+              src={address}
+              alt="address"
+              loading="lazy"
+            />
           </address>
           <div className="box-border flex flex-row gap-x-2 items-center mt-[4px]">
             <a
@@ -57,6 +63,7 @@ export const Contact = () => {
                 src={emailNormal}
                 srcSet={`${emailNormal} 1x, ${emailNormal} 2x, ${emailNormal} 4x`}
                 alt="-__ -_ -- -_--"
+                loading="lazy"
               />
               <img
                 className="absolute top-0 left-0 transition-opacity opacity-0 group-has-hover:opacity-100 group-has-active:opacity-0"
@@ -64,6 +71,7 @@ export const Contact = () => {
                 height={16}
                 src={emailHover}
                 alt="-__ -_ -- -_--"
+                loading="lazy"
               />
               <img
                 className="absolute top-0 left-0 transition-opacity opacity-0 group-has-hover:opacity-0 group-has-active:opacity-100"
@@ -71,6 +79,7 @@ export const Contact = () => {
                 height={16}
                 src={emailActive}
                 alt="-__ -_ -- -_--"
+                loading="lazy"
               />
             </a>
 
