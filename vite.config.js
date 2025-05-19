@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import * as mdPlugin from "vite-plugin-markdown";
 import { analyzer } from "vite-bundle-analyzer";
+import htmlPurge from 'vite-plugin-purgecss'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -21,6 +22,7 @@ export default defineConfig({
       },
     }),
     tailwindcss(),
+    htmlPurge(),
     react(),
     process.env.ANALYZE ? analyzer() : null,
   ].filter((c) => c),

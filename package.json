@@ -37,7 +37,8 @@
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1",
     "vite-bundle-analyzer": "^0.19.0",
-    "vite-plugin-markdown": "^2.2.0"
+    "vite-plugin-markdown": "^2.2.0",
+    "vite-plugin-purgecss": "^0.2.13"
   },
   "moduleNameMapper": {
     "^react/jsx-runtime$": "preact/jsx-runtime"
