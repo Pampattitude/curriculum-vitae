@@ -1,0 +1,4 @@
+const customClasses = [
+  "text-*",
+  "bg-*",
+];
