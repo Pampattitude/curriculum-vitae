@@ -1,7 +1,7 @@
 import { ReactComponent } from "../assets/header.md";
 import { Md } from "../components/Md";
 
-import picture from "../assets/picture.webp";
+import picture from "../../public/picture.webp";
 
 export const Header = () => (
   <header className="flex gap-4 lg:gap-8 p-4 items-center">
