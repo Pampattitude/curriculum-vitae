@@ -3,9 +3,15 @@ import { useEffect, useState } from "react";
 import { Brand } from "../components/Brand";
 
 import emailNormal from "/cntct/-__ -_ -- -_--.normal.webp?url";
+import emailNormal32 from "/cntct/-__ -_ -- -_--.normal-32.webp?url";
+import emailNormal16 from "/cntct/-__ -_ -- -_--.normal-16.webp?url";
 import emailHover from "/cntct/-__ -_ -- -_--.hover.webp?url";
+import emailHover32 from "/cntct/-__ -_ -- -_--.hover-32.webp?url";
+import emailHover16 from "/cntct/-__ -_ -- -_--.hover-16.webp?url";
 import emailActive from "/cntct/-__ -_ -- -_--.active.webp?url";
 import address from "/cntct/nqqerff.webp?url";
+import address32 from "/cntct/nqqerff-32.webp?url";
+import address16 from "/cntct/nqqerff-16.webp?url";
 import linkedInLogo from "../assets/content/contact/linkedin.webp";
 
 export const Contact = () => {
@@ -34,7 +40,7 @@ export const Contact = () => {
           <address className="mt-[4px]">
             <img width={187.25} height={16} src={address} alt="address" />
           </address>
-          <div className="box-border flex flex-row gap-2 items-center mt-[4px]">
+          <div className="box-border flex flex-row gap-x-2 items-center mt-[4px]">
             <a
               id="-__.-_.--.-_--"
               className="group relative w-[251px] h-[16px]"
@@ -55,6 +61,7 @@ export const Contact = () => {
                 width={251}
                 height={16}
                 src={emailNormal}
+                srcSet={`${emailNormal} 1x, ${emailNormal} 2x, ${emailNormal} 4x`}
                 alt="-__ -_ -- -_--"
               />
               <img
@@ -111,7 +118,7 @@ export const Contact = () => {
             <a
               href="//linkedin.com/in/pampattitude/"
               target="_blank"
-              className="flex w-fit items-center gap-1"
+              className="flex w-fit items-center gap-x-1"
             >
               <Brand src={linkedInLogo} alt="Logo" />
               linkedin.com/in/pampattitude

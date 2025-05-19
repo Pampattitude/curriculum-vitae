@@ -35,7 +35,7 @@ export const Experience = ({
   <div {...rest}>
     <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 print:py-1">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex gap-4 text-lg">
+        <div className="flex flex-wrap gap-x-4 text-lg">
           <div className="font-bold">
             {Array.isArray(position) ? (
               <div>
@@ -51,10 +51,10 @@ export const Experience = ({
             )}
           </div>
           <div className="shrink-0">
-            <div className="inline-flex flex-nowrap gap-2 items-center">
+            <div className="flex flex-nowrap gap-2 items-center">
               {companyUrl ? (
                 <a
-                  className="inline-flex flex-nowrap gap-1 items-center"
+                  className="flex flex-nowrap gap-1 items-center"
                   target="_blank"
                   href={companyUrl}
                 >
@@ -63,8 +63,8 @@ export const Experience = ({
                 </a>
               ) : (
                 <>
-                  <span className="inline-block">@</span>
-                  <span className="inline-block">{company}</span>
+                  <span className="block">@</span>
+                  <span className="block">{company}</span>
                 </>
               )}
             </div>
