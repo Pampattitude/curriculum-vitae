@@ -44,7 +44,9 @@ export default defineConfig({
     cssMinify: process.env.NODE_ENV === "prod",
     cssCodeSplit: true,
     rollupOptions: {
-      plugins: [cssPorter()],
+      plugins: [cssPorter({
+        minified: true,
+      })],
       output: {
         manualChunks: {
           preact: ["preact"],
