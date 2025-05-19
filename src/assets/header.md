@@ -1,3 +1,3 @@
 # DELAHODDE Guillaume
 
-**Solution-driven** manager in engineering, with a **strong** & diverse experience in fullstack engineering.
+**Solution-driven** manager, with a **strong** former experience in fullstack engineering.
