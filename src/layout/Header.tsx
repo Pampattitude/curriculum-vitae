@@ -16,7 +16,7 @@ export const Header = () => (
             alt="Profile picture"
             width={48}
             height={48}
-            className="w-[48px] h-[48px] lg:w-[64px] lg:h-[64px] object-cover"
+            className="lg:w-[64px] lg:h-[64px] object-cover"
           />
         </a>
       </div>

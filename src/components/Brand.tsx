@@ -6,6 +6,7 @@ export const Brand = ({
 }: Pick<HTMLImageElement, "src" | "alt"> & Partial<HTMLImageElement>) => (
   <img
     {...(rest as React.PropsWithChildren)}
+    height="1em"
     className={["inline-block h-[1em]", className].filter((c) => c).join(" ")}
     src={src}
     alt={alt}

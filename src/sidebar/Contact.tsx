@@ -32,7 +32,7 @@ export const Contact = () => {
           className={`flex flex-col ${displayContent ? "visible" : "hidden"}`}
         >
           <address className="mt-[4px]">
-            <img className="h-[16px]" src={address} alt="address" />
+            <img width={187.25} height={16} src={address} alt="address" />
           </address>
           <div className="box-border flex flex-row gap-2 items-center mt-[4px]">
             <a
@@ -51,17 +51,23 @@ export const Contact = () => {
               }}
             >
               <img
-                className="absolute top-0 left-0 w-[251px] h-[16px] transition-opacity opacity-100 group-has-hover:opacity-0 group-has-active:opacity-0"
+                className="absolute top-0 left-0 transition-opacity opacity-100 group-has-hover:opacity-0 group-has-active:opacity-0"
+                width={251}
+                height={16}
                 src={emailNormal}
                 alt="-__ -_ -- -_--"
               />
               <img
-                className="absolute top-0 left-0 w-[251px] h-[16px] transition-opacity opacity-0 group-has-hover:opacity-100 group-has-active:opacity-0"
+                className="absolute top-0 left-0 transition-opacity opacity-0 group-has-hover:opacity-100 group-has-active:opacity-0"
+                width={251}
+                height={16}
                 src={emailHover}
                 alt="-__ -_ -- -_--"
               />
               <img
-                className="absolute top-0 left-0 w-[251px] h-[16px] transition-opacity opacity-0 group-has-hover:opacity-0 group-has-active:opacity-100"
+                className="absolute top-0 left-0 transition-opacity opacity-0 group-has-hover:opacity-0 group-has-active:opacity-100"
+                width={251}
+                height={16}
                 src={emailActive}
                 alt="-__ -_ -- -_--"
               />
