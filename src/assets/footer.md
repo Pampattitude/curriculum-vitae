@@ -1,1 +1,1 @@
-Made in [Preact](https://preactjs.com/) with [Tailwind](https://tailwindcss.com/), [Vite](https://vite.dev/) and love <small>(and a sprinkle of urgency)</small>
+Made in [Preact](https://preactjs.com/) with [Tailwind](https://tailwindcss.com/) <small>([Flowbite](https://flowbite.com), [HeroIcons](https://heroicons.com/))</small>, [Vite](https://vite.dev/) and love <small>(and a sprinkle of urgency)</small>
