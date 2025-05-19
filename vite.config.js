@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import * as mdPlugin from "vite-plugin-markdown";
 import { analyzer } from "vite-bundle-analyzer";
-import purgecss from 'vite-plugin-purgecss'
+import purgecss from "rollup-plugin-purgecss";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -22,10 +22,6 @@ export default defineConfig({
       },
     }),
     tailwindcss(),
-    purgecss({
-            variables: true,
-            content: ["./purgecss.config.js"]
-    }),
     react(),
     process.env.ANALYZE ? analyzer() : null,
   ].filter((c) => c),
@@ -46,6 +42,11 @@ export default defineConfig({
     cssMinify: process.env.NODE_ENV === "prod" ? "esbuild" : false,
     cssCodeSplit: true,
     rollupOptions: {
+      plugins: [
+        purgecss({
+          content: ["index.html"],
+        }),
+      ],
       output: {
         manualChunks: {
           preact: ["preact"],
