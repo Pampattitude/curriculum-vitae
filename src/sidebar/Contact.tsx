@@ -3,15 +3,9 @@ import { useEffect, useState } from "react";
 import { Brand } from "../components/Brand";
 
 import emailNormal from "/cntct/-__ -_ -- -_--.normal.webp?url";
-import emailNormal32 from "/cntct/-__ -_ -- -_--.normal-32.webp?url";
-import emailNormal16 from "/cntct/-__ -_ -- -_--.normal-16.webp?url";
 import emailHover from "/cntct/-__ -_ -- -_--.hover.webp?url";
-import emailHover32 from "/cntct/-__ -_ -- -_--.hover-32.webp?url";
-import emailHover16 from "/cntct/-__ -_ -- -_--.hover-16.webp?url";
 import emailActive from "/cntct/-__ -_ -- -_--.active.webp?url";
 import address from "/cntct/nqqerff.webp?url";
-import address32 from "/cntct/nqqerff-32.webp?url";
-import address16 from "/cntct/nqqerff-16.webp?url";
 import linkedInLogo from "../assets/content/contact/linkedin.webp";
 
 export const Contact = () => {

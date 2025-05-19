@@ -10,6 +10,8 @@ export const Brand = ({
     src={src}
     srcSet={`${src} 1w`}
     sizes="((min-width: 1em) and (max-width: 1em)) 1em"
+    width="1em"
+    height="1em"
     alt={alt}
   />
 );
