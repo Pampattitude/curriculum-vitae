@@ -6,14 +6,14 @@ _Grow the team_:
 <li>grow the team following a round of fundraising</li>
 <li>
 
-- ramped up recruitment externally (recruitment network) and internally (People Partners)
-- restructured recruitment criteria and process
+  - ramped up recruitment externally (recruitment network) and internally (People Partners)
+  - restructured recruitment criteria and process
 
 </li>
 <li>
 
-- engineering grew from **`5`** to **`20`** people by Jan 2022
-- engineering **seniority increased** (~5 years average)
+  - engineering grew from **`5`** to **`20`** people by Jan 2022
+  - engineering **seniority increased** (~5 years average)
 
 </li>
 </ul>
