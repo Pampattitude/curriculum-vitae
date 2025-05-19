@@ -1,26 +1,47 @@
 import { useEffect, useState } from "react";
 
-import emailNormal from "/public/cntct/-__ -_ -- -_--.normal.png";
-import emailHover from "/public/cntct/-__ -_ -- -_--.hover.png";
-import emailActive from "/public/cntct/-__ -_ -- -_--.active.png";
+import emailNormal from "/public/cntct/-__ -_ -- -_--.normal.webp";
+import emailHover from "/public/cntct/-__ -_ -- -_--.hover.webp";
+import emailActive from "/public/cntct/-__ -_ -- -_--.active.webp";
+import address from "/public/cntct/nqqerff.webp";
 
 export const Contact = () => {
-  const [content, setContent] = useState(<div />);
+  const [displayContent, setDisplayContent] = useState<boolean>(false);
 
   useEffect(() => {
-    setContent(
-      <div className="contact">
-        <div className="flex flex-col">
-          <h2>Contact</h2>
+    setDisplayContent(true);
+  });
 
-          <address>92600 Asnières-sur-Seine</address>
+  return (
+    <div className="contact">
+      <div className="flex flex-col">
+        <h2>Contact</h2>
+
+        <div
+          className={`flex flex-col animate-pulse ${displayContent ? "hidden" : "visible"}`}
+        >
+          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-40 mt-[4px]" />
+          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-64 mt-[4px]" />
+        </div>
+
+        <div
+          className={`flex flex-col ${displayContent ? "visible" : "hidden"}`}
+        >
+          <address className="mt-[4px]">
+            <img src={address} alt="address" />
+          </address>
           <div className="box-border relative h-[16px] mt-[4px]">
             <a
               id="-__.-_.--.-_--"
               href="mailto:guillaume.delahodde+spam@gmail.com"
               target="_blank"
               onClick={() => {
-                const self = document.getElementById("-__.-_.--.-_--") as unknown as {href: string; setAttribute: (href: 'href', val: string) => void};
+                const self = document.getElementById(
+                  "-__.-_.--.-_--",
+                ) as unknown as {
+                  href: string;
+                  setAttribute: (href: "href", val: string) => void;
+                };
                 self.setAttribute("href", self.href.replace(/\+spam/, "+job"));
               }}
               className="group"
@@ -43,9 +64,7 @@ export const Contact = () => {
             </a>
           </div>
         </div>
-      </div>,
-    );
-  });
-
-  return content;
+      </div>
+    </div>
+  );
 };
