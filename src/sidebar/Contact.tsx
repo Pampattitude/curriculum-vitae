@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 
+import { Brand } from "../components/Brand";
+
 import emailNormal from "/public/cntct/-__ -_ -- -_--.normal.webp";
 import emailHover from "/public/cntct/-__ -_ -- -_--.hover.webp";
 import emailActive from "/public/cntct/-__ -_ -- -_--.active.webp";
 import address from "/public/cntct/nqqerff.webp";
+import linkedInLogo from "../assets/content/contact/linkedin.webp";
 
 export const Contact = () => {
   const [displayContent, setDisplayContent] = useState<boolean>(false);
@@ -20,8 +23,9 @@ export const Contact = () => {
         <div
           className={`flex flex-col animate-pulse ${displayContent ? "hidden" : "visible"}`}
         >
-          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-40 mt-[4px]" />
+          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-42 mt-[4px]" />
           <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-64 mt-[4px]" />
+          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-56 mt-[4px]" />
         </div>
 
         <div
@@ -63,6 +67,10 @@ export const Contact = () => {
               />
             </a>
           </div>
+          <a href="//linkedin.com/in/pampattitude/" target="_blank" className="inline-flex items-center gap-1">
+            <Brand src={linkedInLogo} alt="Logo" />
+            linkedin.com/in/pampattitude
+          </a>
         </div>
       </div>
     </div>
