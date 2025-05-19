@@ -23,9 +23,9 @@ export const Contact = () => {
         <div
           className={`flex flex-col animate-pulse ${displayContent ? "hidden" : "visible"}`}
         >
-          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-42 mt-[4px]" />
-          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-64 mt-[4px]" />
-          <div className="h-[16px] bg-gray-200 rounded-full dark:bg-gray-700 w-56 mt-[4px]" />
+          <div className="h-[20px] bg-gray-200 rounded-full dark:bg-gray-700 w-42 mt-[4px]" />
+          <div className="h-[20px] bg-gray-200 rounded-full dark:bg-gray-700 w-64 mt-[4px]" />
+          <div className="h-[20px] bg-gray-200 rounded-full dark:bg-gray-700 w-56 mt-[4px]" />
         </div>
 
         <div
@@ -105,7 +105,7 @@ export const Contact = () => {
             <a
               href="//linkedin.com/in/pampattitude/"
               target="_blank"
-              className="inline-flex items-center gap-1"
+              className="flex w-fit items-center gap-1"
             >
               <Brand src={linkedInLogo} alt="Logo" />
               linkedin.com/in/pampattitude
