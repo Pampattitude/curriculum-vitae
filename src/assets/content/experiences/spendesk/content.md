@@ -37,6 +37,6 @@ _HR integrations_ feature (_Ecosystem Integrations_):
 
 <footer>
 
-Spendesk went through a company downsizing <a href="https://www.lesechos.fr/start-up/ecosysteme/french-tech-la-licorne-spendesk-taille-dans-ses-effectifs-2119722" target="_blank">in 2024</a>, leading to <b>less opportunities for growth</b>.
+Spendesk went through a <b>company downsizing</b> <a href="https://www.lesechos.fr/start-up/ecosysteme/french-tech-la-licorne-spendesk-taille-dans-ses-effectifs-2119722" target="_blank">in 2024</a>, leading to <b>less opportunities for growth</b>.
 
 </footer>
