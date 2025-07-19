@@ -20,4 +20,4 @@
 - the Early Birds UI kit in React
 - team work organization as Scrum master
 
-<footer>Early Birds was bought by Attraqt (May 2019), leading to reduced engineering efficiency and innovation, capacity for initiative, and employees' wellbeing.</footer>
+<footer>Early Birds was <b>bought by Attraqt</b> (May 2019), leading to <b>reduced engineering efficiency and innovation</b>, capacity for initiative, and employees' wellbeing.</footer>
