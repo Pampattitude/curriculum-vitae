@@ -44,6 +44,7 @@ const KNOWN_HASHES = {
   lang: "blue",
   fram: "orange",
   db: "purple",
+  soft: "indigo",
   prov: "pink",
   meth: "sky",
   tool: "yellow",
