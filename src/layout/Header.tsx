@@ -22,8 +22,15 @@ export const Header = () => (
       </div>
     </div>
 
-    <Md>
-      <ReactComponent />
-    </Md>
+    <div>
+      <h1>
+        D<span className="text-[0.9em]">ELAHODDE</span>{" "}
+        Guillaume
+      </h1>
+
+      <Md>
+        <ReactComponent />
+      </Md>
+    </div>
   </header>
 );
