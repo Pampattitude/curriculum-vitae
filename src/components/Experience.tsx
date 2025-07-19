@@ -6,7 +6,7 @@ export type ExperienceProps = {
   company: string;
   companyUrl: string;
   companyLogo: string;
-  position: string | string[];
+  position: string | (string | string[])[];
   dates: { start: Date; end?: Date };
   location: "paris" | string;
   tags: KnownSkillName[];
@@ -41,8 +41,8 @@ export const Experience = ({
               <div>
                 {position.map((p, index) => (
                   <Fragment key={p}>
-                    <span>{p}</span>
-                    {index != position.length - 1 ? " → " : ""}
+                    <span>{Array.isArray(p) ? p.join(" → ") : p}</span>
+                    {index != position.length - 1 ? ", " : ""}
                   </Fragment>
                 ))}
               </div>
