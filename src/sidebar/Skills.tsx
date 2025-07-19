@@ -66,5 +66,14 @@ export const Skills = () => (
         <SkillTag skill="terraform" />
       </div>
     </section>
+
+    <section>
+      <h3>Soft skills</h3>
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
+        <SkillTag skill="management" />
+        <SkillTag skill="leadership" />
+        <SkillTag skill="pedagogy" />
+      </div>
+    </section>
   </div>
 );

@@ -16,8 +16,6 @@ export const data: ExperienceProps = {
     "scrum",
     "notion",
     "gSheets",
-    "looker",
-    "dustAi",
     "ts",
     "react",
     "reactNative",
@@ -26,5 +24,7 @@ export const data: ExperienceProps = {
     "heroku",
     "aws",
     "docker",
+    "management",
+    "leadership",
   ],
 };
