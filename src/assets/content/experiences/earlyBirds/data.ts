@@ -22,5 +22,7 @@ export const data: ExperienceProps = {
     "pubSub",
     "kube",
     "gcp",
+    "management",
+    "leadership",
   ],
 };

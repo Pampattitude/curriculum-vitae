@@ -78,10 +78,10 @@ export const Experience = ({
         </div>
       </div>
       {tags && (
-        <div className="flex flex-wrap gap-x-2 gap-y-1 print:gap-y-0">
+        <div className="flex flex-wrap gap-x-1 gap-y-0.5 print:gap-y-0 exp-tags">
           {tags.map((tag) => (
             <Fragment key={tag.toString()}>
-              <SkillTag kind="light" full skill={tag} />
+              <SkillTag kind="light" full abbr skill={tag} />
             </Fragment>
           ))}
         </div>

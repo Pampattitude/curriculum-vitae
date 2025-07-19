@@ -117,7 +117,7 @@ export const TagGauge = ({
       <div
         className={[
           `${textColor}`,
-          ` px-2 py-0.5 text-nowrap ${whiteBgColor} overflow-hidden print:w-full print:p-0 print:bg-none`,
+          `px-2 py-0.5 text-nowrap ${whiteBgColor} overflow-hidden print:w-full print:p-0 print:bg-none`,
         ].join(" ")}
       >
         {children}

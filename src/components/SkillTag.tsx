@@ -3,6 +3,7 @@ import { KNOWN_HASHES, TagGauge, TagGaugeProps } from "./TagGauge";
 
 export type KnownSkill = {
   name: string;
+  abbr?: string;
   tooltip?: string;
   kind: KNOWN_HASHES;
   value: number;
@@ -12,10 +13,12 @@ export type KnownSkillName = keyof typeof KNOWN_SKILLS;
 
 export const SkillTag = ({
   skill,
+  abbr = false,
   kind = "dark",
   full = false,
 }: {
   skill: KnownSkillName;
+  abbr?: boolean;
   kind?: TagGaugeProps["kind"];
   full?: boolean;
 }) => {
@@ -36,7 +39,7 @@ export const SkillTag = ({
       tooltip={knownSkill.tooltip}
       factor={full ? 1 : knownSkill.value}
     >
-      {knownSkill.name}
+      {abbr ? (knownSkill.abbr ?? knownSkill.name) : knownSkill.name}
     </TagGauge>
   );
 };
