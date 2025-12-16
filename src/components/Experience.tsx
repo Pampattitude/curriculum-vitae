@@ -1,6 +1,7 @@
 import { Fragment } from "preact";
 import { Brand } from "./Brand";
 import { KnownSkillName, SkillTag } from "./SkillTag";
+import { ExperienceDateRange } from "./ExperienceDateRange";
 
 export type ExperienceProps = {
   company: string;
@@ -14,11 +15,6 @@ export type ExperienceProps = {
 } & {
   className?: string;
 } & React.PropsWithChildren;
-
-const dateFormatter = new Intl.DateTimeFormat("en-US", {
-  month: "short",
-  year: "numeric",
-});
 
 export const Experience = ({
   company,
@@ -63,7 +59,7 @@ export const Experience = ({
                 </a>
               ) : (
                 <>
-                  <span className="block">@</span>
+                  <span className="block"> @</span>
                   <span className="block">{company}</span>
                 </>
               )}
@@ -71,11 +67,7 @@ export const Experience = ({
           </div>
         </div>
 
-        <div className="text-gray-600 text-sm">
-          {dateFormatter.format(dates.start)}
-          &nbsp;&mdash;&nbsp;
-          {dates.end ? dateFormatter.format(dates.end) : <i>now</i>}
-        </div>
+        <ExperienceDateRange className="text-gray-600 text-sm" dates={dates} />
       </div>
       {tags && (
         <div className="flex flex-wrap gap-x-1 gap-y-0.5 print:gap-y-0 exp-tags">
