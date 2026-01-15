@@ -6,6 +6,7 @@ import { Main } from "./Main";
 
 export const Layout = () => {
   const { theme } = useContext<ThemeContextType>(ThemeContext);
+
   return (
     <div data-theme={theme} className="layout min-h-full flex flex-col">
       <Header />
