@@ -1,6 +1,6 @@
 import { Layout } from "./layout";
-import { useState } from "preact/hooks";
-import { createContext, useEffect } from "react";
+import { useState, useEffect } from "preact/hooks";
+import { createContext } from "preact/compat";
 
 export type ThemeContextType = {
   theme: "light" | "dark";
