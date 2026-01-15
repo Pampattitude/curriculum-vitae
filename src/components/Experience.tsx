@@ -29,7 +29,7 @@ export const Experience = ({
   ...rest
 }: ExperienceProps) => (
   <div {...rest}>
-    <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 print:py-1">
+    <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 dark:border-slate-200 print:py-1">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex flex-wrap gap-x-4 text-lg">
           <div className="font-bold">
@@ -67,7 +67,7 @@ export const Experience = ({
           </div>
         </div>
 
-        <ExperienceDateRange className="text-gray-600 text-sm" dates={dates} />
+        <ExperienceDateRange className="text-gray-600 dark:text-gray-400 text-sm" dates={dates} />
       </div>
       {tags && (
         <div className="flex flex-wrap gap-x-1 gap-y-0.5 print:gap-y-0 exp-tags">
@@ -79,7 +79,7 @@ export const Experience = ({
         </div>
       )}
     </div>
-    <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 print:border-none print:pt-0">
+    <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 dark:border-slate-600 print:border-none print:pt-0">
       {children}
     </div>
   </div>
