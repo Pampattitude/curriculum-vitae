@@ -15,7 +15,10 @@ export const Header = () => {
         <div>
           <a
             href="#"
-            onClick={() => (isThemeDark ? setTheme("light") : setTheme("dark"))}
+            onClick={(event) => {
+              event.preventDefault();
+              isThemeDark ? setTheme("light") : setTheme("dark");
+            }}
             className="block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200 print:outline-gray-800 transition-all hover:invert-100"
           >
             <img
