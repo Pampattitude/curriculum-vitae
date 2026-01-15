@@ -26,7 +26,7 @@ export const KNOWN_SKILLS = {
   confluence: { name: "Confluence", kind: "supp", value: 0.8 },
   cultureAmp: { name: "CultureAmp", kind: "supp", value: 0.7 },
   looker: { name: "Looker", kind: "supp", value: 0.5 },
-  dustAi: { name: "Dust AI", kind: "supp", value: 0.6 },
+  dustAi: { name: "Dust.tt", kind: "supp", value: 0.6 },
 
   aws: { name: "AWS", kind: "prov", value: 0.7 },
   gcp: { name: "GCP", kind: "prov", value: 0.8 },

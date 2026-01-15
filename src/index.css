@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @import "./colors.css";
+@import "./theme-dark.css";
 
 @page {
   margin-top: 1rem;
@@ -19,9 +20,7 @@
       @apply tracking-tight;
     }
   }
-}
 
-@layer components {
   h1,
   h2,
   h3 {
@@ -37,7 +36,6 @@
     @apply text-[1.0675rem] font-normal;
   }
 
-  /* Does not work for base layer for some reason */
   a {
     @apply text-blue-800 transition-colors;
     @apply underline;

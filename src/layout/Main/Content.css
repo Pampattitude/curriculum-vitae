@@ -4,4 +4,8 @@
   .content {
     @apply bg-gray-200 text-gray-800;
   }
+
+  [data-theme="dark"] .content {
+    @apply dark:bg-gray-800 dark:text-gray-200;
+  }
 }
