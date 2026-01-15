@@ -2,7 +2,7 @@ export const Languages = () => (
   <div className="languages">
     <h2>Languages</h2>
 
-    <div className="px-4 py-2 inline-grid grid-cols-2 gap-x-8 print:inline-flex basis-xs">
+    <div className="px-4 py-2 inline-grid grid-cols-2 gap-x-8 print:inline-flex">
       <div>
         <span className="print:hidden">🇫🇷 </span>Français
       </div>
