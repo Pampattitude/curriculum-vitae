@@ -25,9 +25,9 @@ const LayoutComponent = () => {
   }, [theme]);
 
   return (
-    <ThemeContext value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <Layout />
-    </ThemeContext>
+    </ThemeContext.Provider>
   );
 };
 export default LayoutComponent;
