@@ -11,24 +11,12 @@ export const Header = () => {
 
   return (
     <header className="dark:bg-gray-900 flex gap-4 lg:gap-8 p-4 items-center">
-      <div className="grow-0 shrink-0">
-          <div className="absolute top-50 left-50">
-            <button
-              className="rounded-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 mr-4 p-1 text-xl transition-colors"
-              onClick={() =>
-                isThemeDark ? setTheme("light") : setTheme("dark")
-              }
-            >
-              <span className="block mt-[-0.2em] pt-[0.1em] pb-[0.1em]">
-                {isThemeDark ? "☀️" : "🌑"}
-              </span>
-            </button>
-          </div>
-
+      <div className="grow-0 shrink-0 relative">
         <div>
           <a
-            href="/"
-            className="block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200 print:outline-gray-800"
+            href="#"
+            onClick={() => (isThemeDark ? setTheme("light") : setTheme("dark"))}
+            className="block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200 print:outline-gray-800 transition-all hover:invert-100"
           >
             <img
               src={picture}
