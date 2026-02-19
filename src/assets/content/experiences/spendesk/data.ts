@@ -9,6 +9,7 @@ export const data: ExperienceProps = {
   companyLogo,
   dates: {
     start: new Date("2022-11"),
+    end: new Date("2025-10"),
   },
   location: "Paris, FR",
   tags: [
