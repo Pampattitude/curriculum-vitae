@@ -5,7 +5,6 @@ import { Brand } from "../components/Brand";
 import emailNormal from "/cntct/-__ -_ -- -_--.normal.webp?url";
 import emailHover from "/cntct/-__ -_ -- -_--.hover.webp?url";
 import emailActive from "/cntct/-__ -_ -- -_--.active.webp?url";
-import address from "/cntct/nqqerff.webp?url";
 import linkedInLogo from "../assets/content/contact/linkedin.webp";
 
 export const Contact = () => {
@@ -32,13 +31,7 @@ export const Contact = () => {
           className={`flex flex-col ${displayContent ? "visible" : "hidden"}`}
         >
           <address className="mt-[4px]">
-            <img
-              width={187.25}
-              height={16}
-              src={address}
-              alt="address"
-              loading="lazy"
-            />
+            Ile-de-France, FRANCE
           </address>
           <div className="box-border flex flex-row gap-x-2 items-center mt-[4px]">
             <a
