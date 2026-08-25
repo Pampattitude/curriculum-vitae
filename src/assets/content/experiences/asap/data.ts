@@ -4,12 +4,12 @@ import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
   position: "Head of Engineering",
-  company: "Masteos",
-  companyUrl: "https://www.masteos.com/",
+  company: "Asap TT",
+  companyUrl: "https://www.asap.work/",
   companyLogo,
   dates: {
-    start: new Date("2021-04"),
-    end: new Date("2022-03"),
+    start: new Date("2025-10"),
+    end: new Date("2026-03"),
   },
   location: "Paris, FR",
   tags: [
@@ -18,11 +18,7 @@ export const data: ExperienceProps = {
     "gSheets",
     "ts",
     "react",
-    "reactNative",
     "pgsql",
-    "neo4j",
-    "heroku",
-    "aws",
     "docker",
     "management",
     "leadership",

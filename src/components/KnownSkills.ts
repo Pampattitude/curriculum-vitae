@@ -70,5 +70,6 @@ export const KNOWN_SKILLS = {
   consulting: { name: "Consulting", kind: "soft", value: 0.8 },
   management: { name: "Management", abbr: 'Mgmt', kind: "soft", value: 0.9 },
   leadership: { name: "Leadership", abbr: 'Lead', kind: "soft", value: 0.9 },
+  strategy: { name: "Strategy", abbr: 'Strat', kind: "soft", value: 0.8 },
   pedagogy: { name: "Pedagogy", kind: "soft", value: 0.9 },
 } as const;

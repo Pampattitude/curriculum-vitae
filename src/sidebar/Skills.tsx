@@ -70,6 +70,7 @@ export const Skills = () => (
     <section>
       <h3>Soft skills</h3>
       <div className="flex flex-wrap gap-x-2 gap-y-1">
+        <SkillTag skill="strategy" />
         <SkillTag skill="management" />
         <SkillTag skill="leadership" />
         <SkillTag skill="pedagogy" />
