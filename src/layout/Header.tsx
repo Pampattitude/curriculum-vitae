@@ -36,7 +36,7 @@ export const Header = () => {
         type="button"
         aria-label={`Switch to ${isThemeDark ? "light" : "dark"} mode`}
         title={`Switch to ${isThemeDark ? "light" : "dark"} mode`}
-        className="ml-auto shrink-0 inline-flex size-9 cursor-pointer items-center justify-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
+        className="ml-auto shrink-0 inline-flex size-9 cursor-pointer items-center justify-center rounded-full border border-gray-300 text-gray-700 transition-colors hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 print:hidden"
         onClick={() => setTheme(isThemeDark ? "light" : "dark")}
       >
         {isThemeDark ? (
