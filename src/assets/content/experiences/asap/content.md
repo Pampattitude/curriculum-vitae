@@ -15,4 +15,4 @@ _Quality & productivity_:
   <li>Structure the legacy reduction tactic and define a priority map</li>
 </ul>
 
-<footer>Position removed during funding round due to business cost optimization. Head of Product was assigned, as suggested during my offboarding, as temporary Head of Product.</footer>
+<footer>Position removed during funding round due to business cost optimization. Head of Product was assigned, as suggested during my offboarding, as temporary Head of Product & Tech.</footer>

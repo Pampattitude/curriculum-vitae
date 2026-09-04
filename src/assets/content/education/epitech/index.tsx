@@ -1,5 +1,7 @@
-import { ReactComponent } from "./content.md";
+import { createElement } from "preact/compat";
+
+import * as content from "./content";
 
 export const epitech = {
-  content: <ReactComponent />,
+  content: createElement(content.en),
 };

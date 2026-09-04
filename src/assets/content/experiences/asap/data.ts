@@ -4,6 +4,7 @@ import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
   position: "Head of Engineering",
+  positionType: "management",
   company: "Asap TT",
   companyUrl: "https://www.asap.work/",
   companyLogo,

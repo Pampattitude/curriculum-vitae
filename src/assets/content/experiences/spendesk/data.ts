@@ -4,6 +4,7 @@ import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
   position: "Engineering Team Lead",
+  positionType: "management",
   company: "Spendesk",
   companyUrl: "https://www.spendesk.com/",
   companyLogo,

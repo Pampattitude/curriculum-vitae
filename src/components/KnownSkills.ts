@@ -26,7 +26,7 @@ export const KNOWN_SKILLS = {
   confluence: { name: "Confluence", kind: "supp", value: 0.8 },
   cultureAmp: { name: "CultureAmp", kind: "supp", value: 0.7 },
   looker: { name: "Looker", kind: "supp", value: 0.5 },
-  dustAi: { name: "Dust AI", kind: "supp", value: 0.6 },
+  dustAi: { name: "Dust.tt", kind: "supp", value: 0.6 },
 
   aws: { name: "AWS", kind: "prov", value: 0.7 },
   gcp: { name: "GCP", kind: "prov", value: 0.8 },
@@ -65,11 +65,18 @@ export const KNOWN_SKILLS = {
   pubSub: { name: "Pub/Sub", kind: "tool", value: 0.7 },
   travis: { name: "Travis", kind: "tool", value: 0.8 },
 
-  entrepreneurship: { name: "Entrepreneurship", abbr: 'Entrepreneur', kind: "soft", value: 0.6 },
+  entrepreneurship: {
+    name: "Entrepreneurship",
+    abbr: "Entrepreneur",
+    kind: "soft",
+    value: 0.6,
+  },
   investment: { name: "Investment", kind: "soft", value: 0.7 },
   consulting: { name: "Consulting", kind: "soft", value: 0.8 },
-  management: { name: "Management", abbr: 'Mgmt', kind: "soft", value: 0.9 },
-  leadership: { name: "Leadership", abbr: 'Lead', kind: "soft", value: 0.9 },
-  strategy: { name: "Strategy", abbr: 'Strat', kind: "soft", value: 0.8 },
+  management: { name: "Management", abbr: "Mgmt", kind: "soft", value: 0.9 },
+  leadership: { name: "Leadership", abbr: "Lead", kind: "soft", value: 0.9 },
+  strategy: { name: "Strategy", abbr: "Strat", kind: "soft", value: 0.8 },
   pedagogy: { name: "Pedagogy", kind: "soft", value: 0.9 },
+
+  development: { name: "Development", abbr: "Dev", value: 0.9 },
 } as const;
