@@ -1,3 +1,4 @@
+import { asap } from "../assets/content/experiences/asap";
 import { spendesk } from "../assets/content/experiences/spendesk";
 import { ezeeworld } from "../assets/content/experiences/ezeeworld";
 import { ExperienceWrap } from "./ExperienceWrap";
@@ -11,6 +12,7 @@ import { legitimates } from "../assets/content/experiences/legitimates";
 export const Experiences = () => (
   <div className="flex flex-col m-auto max-w-6xl gap-8 print:max-w-full print:gap-2">
     <ExperienceWrap {...legitimates} />
+    <ExperienceWrap {...asap} />
     <ExperienceWrap {...spendesk} />
     <ExperienceWrap {...masteos} />
     <ExperienceWrap {...earlyBirds} />

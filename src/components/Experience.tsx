@@ -69,7 +69,7 @@ export const Experience = ({
 
         <ExperienceDateRange className="text-gray-600 dark:text-gray-400 text-sm" dates={dates} />
       </div>
-      {tags && (
+      {/* {tags && (
         <div className="flex flex-wrap gap-x-1 gap-y-0.5 print:gap-y-0 exp-tags">
           {tags.map((tag) => (
             <Fragment key={tag.toString()}>
@@ -77,7 +77,7 @@ export const Experience = ({
             </Fragment>
           ))}
         </div>
-      )}
+      )} */}
     </div>
     <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 dark:border-slate-600 print:border-none print:pt-0">
       {children}

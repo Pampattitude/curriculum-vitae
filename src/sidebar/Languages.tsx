@@ -15,12 +15,12 @@ export const Languages = () => (
       <div className="print:mr-8 text-gray-400">
         C2<span className="text-xs">, proficient</span>
       </div>
-      <div>
+      {/* <div>
         <span className="print:hidden">🇧🇷 </span>Português
       </div>
       <div className="print:mr-8 text-gray-400">
         A2<span className="text-xs">, learning</span>
-      </div>
+      </div> */}
     </div>
   </div>
 );

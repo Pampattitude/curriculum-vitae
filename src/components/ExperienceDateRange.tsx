@@ -11,6 +11,10 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
 const formatDateDiff = (start: Date, end: Date) => {
   const diff = (end.getTime() - start.getTime()) / 1000 / 60 / 60 / 24 / 365.25;
 
+  if (diff < 6 / 12 /*2mo*/) {
+  return '< 1 year';
+  }
+
   let roundedDiff;
   if (diff - Math.abs(diff) > (2 / 12 /*2mo*/)) {
     roundedDiff = Math.abs(diff);

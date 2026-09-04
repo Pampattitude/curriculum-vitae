@@ -1,5 +1,6 @@
 import { Layout } from "./layout";
 import { useState, useEffect } from "preact/hooks";
+import { useLang } from './hooks/useLang';
 import { createContext } from "preact/compat";
 
 export type ThemeContextType = {
@@ -33,6 +34,8 @@ const getInitialTheme = (): "light" | "dark" => {
 
 const LayoutComponent = () => {
   const [theme, setTheme] = useState<"light" | "dark">(getInitialTheme());
+  const [lang, setLang] = useLang();
+
   useEffect(() => {
     if (typeof document !== "undefined") {
       document.documentElement.setAttribute("data-theme", theme);
