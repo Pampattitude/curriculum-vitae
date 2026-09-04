@@ -3,11 +3,14 @@ import { Brand } from "./Brand";
 import { KnownSkillName, SkillTag } from "./SkillTag";
 import { ExperienceDateRange } from "./ExperienceDateRange";
 
+type KnownPositionType = Extract<KnownSkillName, "management" | "entrepreneurship" | "development" | "pedagogy">;
+
 export type ExperienceProps = {
   company: string;
   companyUrl: string;
   companyLogo: string;
   position: string | (string | string[])[];
+  positionType?: KnownPositionType;
   dates: { start: Date; end?: Date };
   location: "paris" | string;
   tags: KnownSkillName[];
@@ -21,9 +24,11 @@ export const Experience = ({
   companyUrl,
   companyLogo,
   position,
+  positionType,
   dates,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   location,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   tags,
   children,
   ...rest
@@ -65,10 +70,20 @@ export const Experience = ({
               )}
             </div>
           </div>
+
+          {positionType && (
+            <div>
+              <SkillTag kind="light" full skill={positionType} />
+            </div>
+          )}
         </div>
 
-        <ExperienceDateRange className="text-gray-600 dark:text-gray-400 text-sm" dates={dates} />
+        <ExperienceDateRange
+          className="text-gray-600 dark:text-gray-400 text-sm"
+          dates={dates}
+        />
       </div>
+
       {/* {tags && (
         <div className="flex flex-wrap gap-x-1 gap-y-0.5 print:gap-y-0 exp-tags">
           {tags.map((tag) => (

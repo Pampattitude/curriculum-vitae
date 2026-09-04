@@ -13,6 +13,8 @@ export const ThemeContext = createContext<ThemeContextType>({
 });
 
 const getInitialTheme = (): "light" | "dark" => {
+  return "light";
+
   if (typeof window === "undefined") {
     return "light";
   }

@@ -1,4 +1,4 @@
-import { createElement } from "react";
+import { createElement } from "preact/compat";
 
 import * as content from "./content";
 

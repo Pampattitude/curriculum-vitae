@@ -4,6 +4,7 @@ import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
   position: ["Permanent Teaching Assistant", "Written Expression Assistant"],
+  positionType: "pedagogy",
   company: "Epitech",
   companyUrl: "https://www.epitech.eu",
   companyLogo,

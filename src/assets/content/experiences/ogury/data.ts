@@ -4,6 +4,7 @@ import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
   position: "Fullstack Developer",
+  positionType: 'development',
   company: "Ogury",
   companyUrl: "https://ogury.com/",
   companyLogo,

@@ -4,6 +4,7 @@ import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
   position: [["Fullstack Developer", "Team Lead"]],
+  positionType: "management",
   company: "Early Birds",
   companyUrl: "https://www.crownpeak.com/",
   companyLogo,
