@@ -1,7 +1,9 @@
+import { createElement } from "react";
+
 import { data } from "./data";
-import { ReactComponent } from "./content.md";
+import * as content from "./content";
 
 export const legitimates = {
   data,
-  content: <ReactComponent />,
+  content: createElement(content.en),
 };
