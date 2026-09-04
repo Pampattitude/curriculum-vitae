@@ -1,5 +1,4 @@
-import { useContext } from "preact/hooks";
-import { ThemeContext, ThemeContextType } from "../App";
+import { useTheme } from "../context/theme";
 
 export const Brand = ({
   src,
@@ -7,7 +6,7 @@ export const Brand = ({
   className,
   ...rest
 }: Pick<HTMLImageElement, "src" | "alt"> & Partial<HTMLImageElement>) => {
-  const { theme, setTheme } = useContext<ThemeContextType>(ThemeContext);
+  const { theme } = useTheme();
   const isThemeDark = theme === "dark";
 
   return (

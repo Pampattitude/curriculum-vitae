@@ -1,9 +1,8 @@
 import { Fragment } from "preact";
-import { useContext } from "preact/compat";
 import { Brand } from "./Brand";
 import { KnownSkillName, SkillTag } from "./SkillTag";
 import { ExperienceDateRange } from "./ExperienceDateRange";
-import { ThemeContext, ThemeContextType } from "../App";
+import { useTheme } from "../context/theme";
 
 type KnownPositionType = Extract<
   KnownSkillName,
@@ -38,7 +37,7 @@ export const Experience = ({
   children,
   ...rest
 }: ExperienceProps) => {
-  const { theme } = useContext<ThemeContextType>(ThemeContext);
+  const { theme } = useTheme();
 
   return (
     <div {...rest}>

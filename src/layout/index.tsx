@@ -1,12 +1,11 @@
-import { useContext } from "preact/hooks";
-import { ThemeContext, ThemeContextType } from "../App";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Main } from "./Main";
+import { useTheme } from "../context/theme";
 
 export const Layout = () => {
-  const { theme } = useContext<ThemeContextType>(ThemeContext);
-  
+  const { theme } = useTheme();
+
   return (
     <div data-theme={theme} className="layout min-h-full flex flex-col">
       <Header />

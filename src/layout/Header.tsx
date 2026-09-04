@@ -1,12 +1,11 @@
-import { useContext } from "preact/hooks";
 import { ReactComponent } from "../assets/header.md";
 import { Md } from "../components/Md";
-import { ThemeContext, ThemeContextType } from "../App";
 
 import picture from "/picture.webp?url";
+import { useTheme } from "../context/theme";
 
 export const Header = () => {
-  const { theme, setTheme } = useContext<ThemeContextType>(ThemeContext);
+  const { theme, setTheme } = useTheme();
   const isThemeDark = theme === "dark";
 
   return (
@@ -24,11 +23,11 @@ export const Header = () => {
       </div>
 
       <div>
-        <h1>
+        <h1 className="text-2xl">
           D<span className="text-[0.9em]">ELAHODDE</span> Guillaume
         </h1>
 
-        <Md>
+        <Md className="text-sm italic">
           <ReactComponent />
         </Md>
       </div>
