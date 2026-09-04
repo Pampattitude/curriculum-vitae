@@ -1,9 +1,14 @@
 import { Fragment } from "preact";
+import { useContext } from "preact/compat";
 import { Brand } from "./Brand";
 import { KnownSkillName, SkillTag } from "./SkillTag";
 import { ExperienceDateRange } from "./ExperienceDateRange";
+import { ThemeContext, ThemeContextType } from "../App";
 
-type KnownPositionType = Extract<KnownSkillName, "management" | "entrepreneurship" | "development" | "pedagogy">;
+type KnownPositionType = Extract<
+  KnownSkillName,
+  "management" | "entrepreneurship" | "development" | "pedagogy"
+>;
 
 export type ExperienceProps = {
   company: string;
@@ -32,59 +37,62 @@ export const Experience = ({
   tags,
   children,
   ...rest
-}: ExperienceProps) => (
-  <div {...rest}>
-    <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 dark:border-slate-200 print:py-1">
-      <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex flex-wrap gap-x-4 text-lg">
-          <div className="font-bold">
-            {Array.isArray(position) ? (
-              <div>
-                {position.map((p, index) => (
-                  <Fragment key={p}>
-                    <span>{Array.isArray(p) ? p.join(" → ") : p}</span>
-                    {index != position.length - 1 ? ", " : ""}
-                  </Fragment>
-                ))}
-              </div>
-            ) : (
-              position
-            )}
-          </div>
-          <div className="shrink-0">
-            <div className="flex flex-nowrap gap-2 items-center">
-              {companyUrl ? (
-                <a
-                  className="flex flex-nowrap gap-1 items-center"
-                  target="_blank"
-                  href={companyUrl}
-                >
-                  <Brand src={companyLogo} alt="Logo" />
-                  <span className="inline-block">{company}</span>
-                </a>
+}: ExperienceProps) => {
+  const { theme } = useContext<ThemeContextType>(ThemeContext);
+
+  return (
+    <div {...rest}>
+      <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 dark:border-slate-200 print:py-1">
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className="flex flex-wrap gap-x-4 text-lg">
+            <div className="font-bold">
+              {Array.isArray(position) ? (
+                <div>
+                  {position.map((p, index) => (
+                    <Fragment key={p}>
+                      <span>{Array.isArray(p) ? p.join(" → ") : p}</span>
+                      {index != position.length - 1 ? ", " : ""}
+                    </Fragment>
+                  ))}
+                </div>
               ) : (
-                <>
-                  <span className="block"> @</span>
-                  <span className="block">{company}</span>
-                </>
+                position
               )}
             </div>
+            <div className="shrink-0">
+              <div className="flex flex-nowrap gap-2 items-center">
+                {companyUrl ? (
+                  <a
+                    className="flex flex-nowrap gap-1 items-center"
+                    target="_blank"
+                    href={companyUrl}
+                  >
+                    <Brand src={companyLogo} alt="Logo" />
+                    <span className="inline-block">{company}</span>
+                  </a>
+                ) : (
+                  <>
+                    <span className="block"> @</span>
+                    <span className="block">{company}</span>
+                  </>
+                )}
+              </div>
+            </div>
+
+            {positionType && (
+              <div>
+                <SkillTag kind={theme} full skill={positionType} />
+              </div>
+            )}
           </div>
 
-          {positionType && (
-            <div>
-              <SkillTag kind="light" full skill={positionType} />
-            </div>
-          )}
+          <ExperienceDateRange
+            className="text-gray-600 dark:text-gray-400 text-sm"
+            dates={dates}
+          />
         </div>
 
-        <ExperienceDateRange
-          className="text-gray-600 dark:text-gray-400 text-sm"
-          dates={dates}
-        />
-      </div>
-
-      {/* {tags && (
+        {/* {tags && (
         <div className="flex flex-wrap gap-x-1 gap-y-0.5 print:gap-y-0 exp-tags">
           {tags.map((tag) => (
             <Fragment key={tag.toString()}>
@@ -93,9 +101,10 @@ export const Experience = ({
           ))}
         </div>
       )} */}
+      </div>
+      <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 dark:border-slate-600 print:border-none print:pt-0">
+        {children}
+      </div>
     </div>
-    <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 dark:border-slate-600 print:border-none print:pt-0">
-      {children}
-    </div>
-  </div>
-);
+  );
+};

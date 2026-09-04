@@ -13,9 +13,6 @@ export const ThemeContext = createContext<ThemeContextType>({
 });
 
 const getInitialTheme = (): "light" | "dark" => {
-  // TODO(2026-04-09): reenable dark mode support (must add toggle)
-  return "light";
-
   if (typeof window === "undefined") {
     return "light";
   }
