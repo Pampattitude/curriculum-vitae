@@ -33,7 +33,7 @@ export const Contact = () => {
           <address className="mt-[4px]">
             Ile-de-France, FRANCE
           </address>
-          <div className="box-border flex flex-row gap-x-2 items-center mt-[4px]">
+          <div className="print:hidden box-border flex flex-row gap-x-2 items-center mt-[4px]">
             <a
               id="-__.-_.--.-_--"
               className="group relative w-[251px] h-[16px]"
@@ -80,7 +80,7 @@ export const Contact = () => {
               <button
                 type="button"
                 aria-label="Copy"
-                className="m-auto transition-all cursor-pointer p-0.5 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 active:ring-4 active:outline-none active:ring-gray-100 font-medium rounded-lg text-sm text-center inline-flex items-center dark:active:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+                className="print:hidden m-auto transition-all cursor-pointer p-0.5 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 active:ring-4 active:outline-none active:ring-gray-100 font-medium rounded-lg text-sm text-center inline-flex items-center dark:active:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
                 onClick={() => {
                   const self = document.getElementById(
                     "-__.-_.--.-_--",
@@ -117,7 +117,7 @@ export const Contact = () => {
               target="_blank"
               className="flex w-fit items-center gap-x-1"
             >
-              <Brand src={linkedInLogo} alt="Logo" />
+              <Brand className="print:hidden" src={linkedInLogo} alt="Logo" />
               linkedin.com/in/pampattitude
             </a>
           </div>

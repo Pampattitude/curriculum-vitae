@@ -15,7 +15,7 @@ export const Education = () => (
           target="_blank"
           href="https://epitech.eu/"
         >
-          <Brand src={epitechLogo} alt="Logo" />
+          <Brand className="print:hidden" src={epitechLogo} alt="Logo" />
           <span className="inline-block">Epitech</span>
         </a>
       </div>

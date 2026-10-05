@@ -9,7 +9,7 @@ export const Header = () => {
   const isThemeDark = theme === "dark";
 
   return (
-    <header className="dark:bg-gray-900 flex gap-4 lg:gap-8 p-4 items-center">
+    <header className="print:border-b-2 print:mb-4 border-slate-800 dark:border-slate-200 dark:bg-gray-900 flex gap-4 lg:gap-8 p-4 items-center">
       <div className="grow-0 shrink-0 relative">
         <div>
           <img
@@ -17,7 +17,7 @@ export const Header = () => {
             alt="Profile picture"
             width={48}
             height={48}
-            className="block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200 print:outline-gray-800 lg:w-[64px] lg:h-[64px] object-cover"
+            className="print:hidden block rounded-[50%] w-fit h-fit overflow-hidden outline-2 outline-gray-200 print:outline-gray-800 lg:w-[64px] lg:h-[64px] object-cover"
           />
         </div>
       </div>
