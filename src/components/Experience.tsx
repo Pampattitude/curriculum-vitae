@@ -66,7 +66,7 @@ export const Experience = ({
                     target="_blank"
                     href={companyUrl}
                   >
-                    <Brand className="print:hidden" src={companyLogo} alt="Logo" />
+                    <Brand className="mr-1 print:hidden" src={companyLogo} alt="Logo" />
                     <span className="inline-block">{company}</span>
                   </a>
                 ) : (

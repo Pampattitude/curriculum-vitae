@@ -27,7 +27,7 @@
     }
 
     code {
-      @apply text-[0.95em] bg-gray-300 text-red-800 rounded-sm px-1 py-0.25;
+      @apply text-[0.95em] bg-slate-300 text-red-800 rounded-sm px-1 py-0.25;
     }
 
     header,
@@ -87,6 +87,14 @@
             }
           }
         }
+      }
+    }
+  }
+
+  html[data-theme="dark"] {
+  .markdown {
+    code {
+        @apply text-red-200 bg-slate-700;
       }
     }
   }

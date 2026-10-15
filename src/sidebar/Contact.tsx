@@ -117,7 +117,7 @@ export const Contact = () => {
               target="_blank"
               className="flex w-fit items-center gap-x-1"
             >
-              <Brand className="print:hidden" src={linkedInLogo} alt="Logo" />
+              <Brand className="mr-1 print:hidden" src={linkedInLogo} alt="Logo" />
               linkedin.com/in/pampattitude
             </a>
           </div>
