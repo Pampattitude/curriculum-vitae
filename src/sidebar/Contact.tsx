@@ -2,9 +2,6 @@ import { useEffect, useState } from "preact/compat";
 
 import { Brand } from "../components/Brand";
 
-import emailNormal from "/cntct/-__ -_ -- -_--.normal.webp?url";
-import emailHover from "/cntct/-__ -_ -- -_--.hover.webp?url";
-import emailActive from "/cntct/-__ -_ -- -_--.active.webp?url";
 import linkedInLogo from "../assets/content/contact/linkedin.webp";
 
 export const Contact = () => {
