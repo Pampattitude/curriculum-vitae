@@ -1,1 +1,1 @@
-Co-founded an early-stage investment and advisory firm. Lead technical audits and due diligence for pre-seed/seed startups; advise founders on engineering strategy, architecture, hiring, and delivery; support investment decisions with technical and financial analysis.
+Teaching assistant (pedagogical content, videos, lessons, evaluation) in C++, C#, C, and French Written Expression

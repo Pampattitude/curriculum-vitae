@@ -30,9 +30,26 @@ export const Contact = () => {
         <div
           className={`flex flex-col ${displayContent ? "visible" : "hidden"}`}
         >
-          <address className="mt-[4px]">
-            Ile-de-France, FRANCE
-          </address>
+          <address className="mt-[4px]">Paris, FR</address>
+          <div className="hidden print:visible">
+            <a
+              id="-__.-_.--.-_--"
+              className="group relative w-[251px] h-[16px]"
+              href="mailto:guillaume.delahodde+job+pdf@gmail.com"
+              target="_blank"
+              onClick={() => {
+                const self = document.getElementById(
+                  "-__.-_.--.-_--",
+                ) as unknown as {
+                  href: string;
+                  setAttribute: (href: "href", val: string) => void;
+                };
+                self.setAttribute("href", self.href.replace(/\+spam/, "+job"));
+              }}
+            >
+              guillaume.delahodde+job@gmail.com
+            </a>
+          </div>
           <div className="print:hidden box-border flex flex-row gap-x-2 items-center mt-[4px]">
             <a
               id="-__.-_.--.-_--"
@@ -117,7 +134,11 @@ export const Contact = () => {
               target="_blank"
               className="flex w-fit items-center gap-x-1"
             >
-              <Brand className="mr-1 print:hidden" src={linkedInLogo} alt="Logo" />
+              <Brand
+                className="mr-1 print:hidden"
+                src={linkedInLogo}
+                alt="Logo"
+              />
               linkedin.com/in/pampattitude
             </a>
           </div>

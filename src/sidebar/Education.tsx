@@ -21,9 +21,8 @@ export const Education = () => (
       </div>
       <div className="text-gray-300 text-sm">2008&nbsp;&mdash;&nbsp;2013</div>
     </div>
-{/* 
     <div className="text-sm">
       <Md>{epitech.content}</Md>
-    </div> */}
+    </div>
   </div>
 );
