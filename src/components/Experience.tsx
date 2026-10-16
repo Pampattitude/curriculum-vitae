@@ -6,7 +6,7 @@ import { useTheme } from "../context/theme";
 
 type KnownPositionType = Extract<
   KnownSkillName,
-  "management" | "entrepreneurship" | "development" | "pedagogy"
+  "management" | "hands-on management" | "entrepreneurship" | "development" | "pedagogy"
 >;
 
 export type ExperienceProps = {

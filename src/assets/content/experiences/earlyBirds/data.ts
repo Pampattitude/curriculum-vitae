@@ -3,9 +3,9 @@ import { ExperienceProps } from "../../../../components/Experience";
 import companyLogo from "./logo.webp";
 
 export const data: ExperienceProps = {
-  position: [["Fullstack Developer", "Team Lead"]],
-  positionType: "management",
-  company: "Early Birds",
+  position: ["Team Lead"],
+  positionType: "hands-on management",
+  company: "Early Birds / Attraqt",
   companyUrl: "https://www.crownpeak.com/",
   companyLogo,
   dates: {

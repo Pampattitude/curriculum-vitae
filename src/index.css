@@ -31,6 +31,7 @@
   }
   h2 {
     @apply text-xl;
+    @apply font-bold;
   }
   h3 {
     @apply text-[1.0675rem] font-normal;

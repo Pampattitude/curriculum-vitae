@@ -1,3 +1,1 @@
-- API server for in-house mobile SDKs and Web interfaces
-
-- proxy system hosted in a renown cloud system for mapping and serving data to Java workers
+API servers with Node.js/Express.js, MySQL, CouchBase, MongoDB; proxy project on a cloud system with pub/sub; technologies included Hadoop, Druid, and ElasticSearch.

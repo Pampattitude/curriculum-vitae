@@ -1,6 +1,6 @@
-import { epitech } from "../assets/content/education/epitech";
+// import { epitech } from "../assets/content/education/epitech";
 import { Brand } from "../components/Brand";
-import { Md } from "../components/Md";
+// import { Md } from "../components/Md";
 
 import epitechLogo from "../assets/content/education/epitech/logo.webp";
 
@@ -21,9 +21,9 @@ export const Education = () => (
       </div>
       <div className="text-gray-300 text-sm">2008&nbsp;&mdash;&nbsp;2013</div>
     </div>
-
+{/* 
     <div className="text-sm">
       <Md>{epitech.content}</Md>
-    </div>
+    </div> */}
   </div>
 );

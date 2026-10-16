@@ -12,7 +12,7 @@ const formatDateDiff = (start: Date, end: Date) => {
   const diff = (end.getTime() - start.getTime()) / 1000 / 60 / 60 / 24 / 365.25;
 
   if (diff < 6 / 12 /*2mo*/) {
-  return '< 1 year';
+  return 'less than a year';
   }
 
   let roundedDiff;

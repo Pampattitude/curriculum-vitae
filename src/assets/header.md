@@ -1,3 +1,1 @@
-**Engineering leader** with **10+ years of experience** across software engineering, team leadership and engineering management.
-Experienced in scaling organizations, building high-performing cross-functional teams, and delivering complex products in startup / scale-up environments.
-Strong background in fullstack engineering, combined with a business-oriented approach to Product-Engineering strategy, organizational design and technical execution.
+Engineering leader with 10+ years across software engineering, team leadership, and engineering management. Scaled engineering organisations from 5 to 20+ engineers, led 3 squads / 12+ engineers, and delivered revenue-critical products in startup and scale-up environments. Combines full-stack technical depth (Node.js/TypeScript, React, GCP/AWS, microservices) with business-oriented Product-Engineering strategy, organisational design, and execution. Based in Paris; bilingual English/French.

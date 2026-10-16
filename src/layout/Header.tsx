@@ -24,7 +24,7 @@ export const Header = () => {
 
       <div>
         <h1 className="text-2xl">
-          D<span className="text-[0.9em]">ELAHODDE</span> Guillaume
+          D<span className="text-[0.9em]">ELAHODDE</span> Guillaume, <small>Engineering Leader</small>
         </h1>
 
         <Md className="text-sm italic">

@@ -1,23 +1,6 @@
-<header>
+<header>Worked in the Product Development team on a Node.js/TypeScript recommendation API (low latency, high throughput), a React configuration console for clients (including supporting configuration API), and the Early Birds UI kit.</header>
 
-<b>Team Lead mission statement</b>: create the first squad of the Engineering team and build and maintain the customer console webapp.
-
-</header>
-
-- leading a 3-person squad responsible for Client Tools
-- developing a dataviz platform with BigQuery, Cube.JS and React
-- improving and maintaining the UI kit
-- maintaining the configuration console and the related API, and a debug Chrome extension
-
-<header>
-
-<b>Fullstack Developer mission statement</b>: develop and maintain tools on the existing customer console webapp and API.
-
-</header>
-
-- product recommendation API (low latency, high throughput) for e-commerce
-- the React configuration app for clients (legacy maintenance & evolution, remade from scratch using React)
-- the Early Birds UI kit in React
-- team work organization as Scrum master
-
-<footer>Early Birds was <b>bought by Attraqt</b> (May 2019), leading to <b>reduced engineering efficiency and innovation</b>, capacity for initiative, and employees' wellbeing.</footer>
+* assisted with team work organisation as Scrum Master
+* used GCP services including Pub/Sub, Kubernetes, and BigQuery
+* led a 3-person squad responsible for Client Tools
+* projects included a dataviz platform with BigQuery, Cube.JS, and React; improving and maintaining the UI kit; maintaining the configuration console, related API, and a debug Chrome extension; managing the team and team organisation

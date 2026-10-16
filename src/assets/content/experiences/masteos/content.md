@@ -1,37 +1,7 @@
-<header><b>Mission statement</b>: <strong>scale the Engineering</strong> department by recruiting key engineers, organizing the squads (<i>Investissement</i>, <i>Travaux</i>, <i>Gestion Locative</i>, <i>Mobile</i>) and participate in reporting for the Executive Committee.</header>
+<header>Responsible for scaling the Engineering department from 5 to 20 engineers across four squads (Investissement, Travaux, Gestion Locative, Mobile). Reported directly to the Executive Committee.</header>
 
-_Grow the team_:
-
-<ul class="car">
-<li>grow the team following a round of fundraising</li>
-<li>
-
-  - ramped up recruitment externally (recruitment network) and internally (People Partners)
-  - restructured recruitment criteria and process
-
-</li>
-<li>
-
-  - engineering grew from **`5`** to **`20`** people by Jan 2022
-  - engineering **seniority increased** (~5 years average)
-
-</li>
-</ul>
-
-_Mobile app_ project:
-
-<ul class="car">
-<li>mobile app development was stalled, release date exceed by 6 months; main developer was burned out</li>
-<li>created a taskforce of engineers with mobile experience</li>
-<li>mobile app was released in three weeks; outstanding bugs were fixed and monitoring was put in place</li>
-</ul>
-
-_Recommendation engine_ project:
-
-<ul class="car">
-<li>recommendation engine development scope creep, team lead selected a database paradigm unknown to the team (graph-based, Neo4J)</li>
-<li>set-up bi-weekly progress loop; implemented pair-programming sessions; set-up close loop w/ Neo4J technical support</li>
-<li>recommendation engine was released with a measured, reduced scope</li>
-</ul>
-
-<footer>CTO recruited in Autumn 2021, leading to a change in methods (agile → V-model) and <strong>redundancy in leadership</strong>.</footer>
+* scaled engineering headcount from 5 to 20 in under a year by revamping recruitment criteria, partnering with People Ops, and leveraging my professional network. Average team seniority increased to Confirmed (~5 years)
+* rescued a stalled mobile app project that was 6 months behind schedule; assembled a taskforce of engineers with mobile experience, released the app in 3 weeks, and set up monitoring for ongoing stability.
+* released a recommendation engine that suffered from scope creep and an unfamiliar graph database (Neo4J); introduced bi-weekly progress reviews, pair-programming sessions, and a direct support channel with Neo4J; successfully delivered a reduced, viable scope
+* acted as the engineering voice in ExCom, presenting delivery metrics, resource needs, and technical risk assessments.
+* adapted to a new CTO arriving mid-year; helped transition the organisation from Agile to a lean approach.

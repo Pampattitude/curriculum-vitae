@@ -1,18 +1,7 @@
-<header><b>Mission statement</b>: define the Product-Engineering strategy alongside the Head of Product. Structure Engineering efforts to reduce legacy and improve productivity.</header>
+<header>Executive role partnering with the Head of Product to define the company’s technical and product roadmap for 2026 and beyond. Focused on structuring engineering efforts to reduce technical debt while maximising delivery velocity.</header>
 
-_Strategy_:
+* defined the 2026 Product-Engineering strategy in close collaboration with the Head of Product, aligning long-term business goals with technical capabilities
+* designed an objective prioritisation framework to evaluate high-reward strategic initiatives, enabling leadership to make data-driven trade-offs between innovation, legacy reduction, and time-to-market
+* developed a comprehensive legacy reduction roadmap in partnership with Team Leads, identifying critical bottlenecks and creating a priority map to systematically modernise the codebase while maintaining product continuity
 
-<ul class="car">
-  <li>Build Product-Engineering strategy for 2026 and beyond</li>
-  <li>Construct a prioritization framework to objectively compare high-reward strategic angles</li>
-  <li>A collection of strategies to weigh an choose from</li>
-</ul>
-
-_Quality & productivity_:
-
-<ul class="car">
-  <li>Reduce the legacy</li>
-  <li>Structure the legacy reduction tactic and define a priority map</li>
-</ul>
-
-<footer>Position removed during funding round due to business cost optimization. Head of Product was assigned, as suggested during my offboarding, as temporary Head of Product & Tech.</footer>
+<footer>Role ended due to funding-round cost optimisation; recommended the Head of Product as interim Head of Product & Tech during offboarding.</footer>
