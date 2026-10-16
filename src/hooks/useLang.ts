@@ -22,8 +22,7 @@ export const getInitialLang = (): Lang => {
   const hasLocalStorage =
     "localStorage" in window && window.localStorage != null;
   if (hasLocalStorage) {
-    const storedLang = window.localStorage.getItem("lang") as
-      | Lang;
+    const storedLang = window.localStorage.getItem("lang") as Lang;
     if (LANG_AVAILABLE.includes(storedLang)) {
       return storedLang;
     }

@@ -62,4 +62,15 @@
       }
     }
   }
+
+  h1.section-title,
+  h2.section-title {
+    font-weight: bold;
+  }
+  h1.section-title {
+    font-size: 1.5em;
+  }
+  h2.section-title {
+    font-size: 1.25em;
+  }
 }

@@ -92,8 +92,8 @@
   }
 
   html[data-theme="dark"] {
-  .markdown {
-    code {
+    .markdown {
+      code {
         @apply text-red-200 bg-slate-700;
       }
     }

@@ -5,7 +5,10 @@ export type MdProps = {
 } & React.PropsWithChildren;
 
 export const Md = ({ className, children, ...rest }: MdProps) => (
-  <article {...rest} className={["markdown", className].filter((c) => c).join(" ")}>
+  <article
+    {...rest}
+    className={["markdown", className].filter((c) => c).join(" ")}
+  >
     {children}
   </article>
 );

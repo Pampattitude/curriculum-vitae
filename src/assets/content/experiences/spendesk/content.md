@@ -1,4 +1,4 @@
-<header>Led three squads (Finance Controller, Ecosystem Integrations, Customer Operations) totalling 12+ engineers. Owned squad culture, delivery, budgeting, and career growth.</header>
+<header>Hands-on Engineering Manager / Team lead hybrid. Led three squads (Finance Controller, Ecosystem Integrations, Customer Operations) totalling 12+ engineers. Owned squad culture, objectives, delivery, budgeting, and career growth.</header>
 
 * created and scaled two new squads (Finance Controller and Ecosystem Integrations) during organisational restructuring, defining each squad’s mission, rituals, and KPIs to align with business personas
 * drove a new pricing & packaging project, restructured and re-prioritised the backlog, organised testing sessions with stakeholders, and led a successful launch resulting in a ~10% increase in mean revenue from new customers

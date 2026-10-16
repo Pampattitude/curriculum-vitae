@@ -6,23 +6,25 @@ import epitechLogo from "../assets/content/education/epitech/logo.webp";
 
 export const Education = () => (
   <div>
-    <h2>Education</h2>
+    <h2 className="section-title">Education</h2>
 
-    <div className="flex justify-between gap-2">
-      <div>
-        <a
-          className="inline-flex flex-nowrap gap-1 items-center"
-          target="_blank"
-          href="https://epitech.eu/"
-        >
-          <Brand className="mr-1 print:hidden" src={epitechLogo} alt="Logo" />
-          <span className="inline-block">Epitech</span>
-        </a>
+    <div className="px-4 py-2">
+      <div className="flex justify-between gap-2">
+        <div>
+          <a
+            className="inline-flex flex-nowrap gap-1 items-center"
+            target="_blank"
+            href="https://epitech.eu/"
+          >
+            <Brand className="mr-1 print:hidden" src={epitechLogo} alt="Logo" />
+            <span className="inline-block">Epitech</span>
+          </a>
+        </div>
+        <div className="text-gray-300 text-sm">2008&nbsp;&mdash;&nbsp;2013</div>
       </div>
-      <div className="text-gray-300 text-sm">2008&nbsp;&mdash;&nbsp;2013</div>
-    </div>
-    <div className="text-sm">
-      <Md>{epitech.content}</Md>
+      <div className="text-sm">
+        <Md>{epitech.content}</Md>
+      </div>
     </div>
   </div>
 );

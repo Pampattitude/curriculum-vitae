@@ -1,1 +1,1 @@
-export { ReactComponent as en } from './en.md'
+export { ReactComponent as en } from "./en.md";

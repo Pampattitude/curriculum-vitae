@@ -12,11 +12,11 @@ const formatDateDiff = (start: Date, end: Date) => {
   const diff = (end.getTime() - start.getTime()) / 1000 / 60 / 60 / 24 / 365.25;
 
   if (diff < 6 / 12 /*2mo*/) {
-  return 'less than a year';
+    return "less than a year";
   }
 
   let roundedDiff;
-  if (diff - Math.abs(diff) > (2 / 12 /*2mo*/)) {
+  if (diff - Math.abs(diff) > 2 / 12 /*2mo*/) {
     roundedDiff = Math.abs(diff);
   } else {
     roundedDiff = Math.ceil(diff);
@@ -30,7 +30,8 @@ export const ExperienceDateRange = ({
   ...rest
 }: ExperienceDateRangeProps) => (
   <div {...rest}>
-    {dateFormatter.format(start)}&nbsp;-&nbsp;{end ? dateFormatter.format(end) : <i>now</i>}
+    {dateFormatter.format(start)}&nbsp;-&nbsp;
+    {end ? dateFormatter.format(end) : <i>now</i>}
     &nbsp;&mdash;&nbsp;
     {formatDateDiff(start, end ?? new Date())}
   </div>

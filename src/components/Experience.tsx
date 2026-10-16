@@ -6,7 +6,11 @@ import { useTheme } from "../context/theme";
 
 type KnownPositionType = Extract<
   KnownSkillName,
-  "management" | "hands-on management" | "entrepreneurship" | "development" | "pedagogy"
+  | "management"
+  | "hands-on management"
+  | "entrepreneurship"
+  | "development"
+  | "pedagogy"
 >;
 
 export type ExperienceProps = {
@@ -66,7 +70,11 @@ export const Experience = ({
                     target="_blank"
                     href={companyUrl}
                   >
-                    <Brand className="mr-1 print:hidden" src={companyLogo} alt="Logo" />
+                    <Brand
+                      className="mr-1 print:hidden"
+                      src={companyLogo}
+                      alt="Logo"
+                    />
                     <span className="inline-block">{company}</span>
                   </a>
                 ) : (

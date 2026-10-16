@@ -1,4 +1,4 @@
-import {  createContext, useState } from "preact/compat";
+import { createContext, useState } from "preact/compat";
 import { useContext } from "react";
 
 export type ThemeContextType = {

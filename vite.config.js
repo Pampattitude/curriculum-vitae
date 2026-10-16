@@ -26,7 +26,7 @@ export default defineConfig({
     process.env.ANALYZE ? analyzer() : null,
   ].filter((c) => c),
   server: {
-    host: process.env.NODE_ENV !== 'prod' ? '0.0.0.0' : 'localhost',
+    host: process.env.NODE_ENV !== "prod" ? "0.0.0.0" : "localhost",
     watch: {
       usePolling: true,
     },

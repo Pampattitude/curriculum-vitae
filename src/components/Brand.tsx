@@ -10,16 +10,25 @@ export const Brand = ({
   const isThemeDark = theme === "dark";
 
   return (
-    <div 
-        className={["inline-block", isThemeDark ? 'bg-white rounded-xs m-[-2px] p-[2px] overflow-visible' : null, className].filter((c) => c).join(" ")}
->
-  <img
-    {...(rest as React.PropsWithChildren)}
-    src={src}
-    width="18px"
-    height="18px"
-    alt={alt}
-    loading="lazy"
-  /></div>
-);
+    <div
+      className={[
+        "inline-block",
+        isThemeDark
+          ? "bg-white rounded-xs m-[-2px] p-[2px] overflow-visible"
+          : null,
+        className,
+      ]
+        .filter((c) => c)
+        .join(" ")}
+    >
+      <img
+        {...(rest as React.PropsWithChildren)}
+        src={src}
+        width="18px"
+        height="18px"
+        alt={alt}
+        loading="lazy"
+      />
+    </div>
+  );
 };
