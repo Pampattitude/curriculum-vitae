@@ -56,11 +56,12 @@ export const KNOWN_SKILLS = {
     value: 0.9,
     visible: true,
   },
-  js: { name: "JavaScript", abbr: "JS", kind: "lang", value: 0.8 },
+  js: { name: "JavaScript", abbr: "JS", kind: "lang", value: 0.8, visible: true },
   html: { name: "HTML", kind: "lang", value: 0.9 },
   cpp: { name: "C++", kind: "lang", value: 0.8 },
   cSharp: { name: "C#", kind: "lang", value: 0.7 },
-  python: { name: "Python", kind: "lang", value: 0.4 },
+  python: { name: "Python", kind: "lang", value: 0.5, visible: true },
+  gdscript: { name: "GDScript", kind: "lang", value: 0.6 },
   latex: { name: "Latex", kind: "lang", value: 0.3 },
 
   node: {
@@ -132,7 +133,7 @@ export const KNOWN_SKILLS = {
     abbr: "Mgmt hands-on",
     kind: "soft",
     value: 1,
-    visible: true,
+    visible: false,
   },
   career: {
     name: "Career progress",
@@ -190,7 +191,6 @@ export const KNOWN_SKILLS = {
     visible: true,
   },
   pedagogy: { name: "Pedagogy", kind: "soft", value: 0.9 },
-
   development: {
     name: "Development",
     abbr: "Dev",
