@@ -30,7 +30,7 @@ export const ExperienceDateRange = ({
   dates: { start, end },
   ...rest
 }: ExperienceDateRangeProps) => (
-  <div {...rest}>
+  <div {...rest} className={`dateline ${rest.className}`}>
     {dateFormatter.format(start)}&nbsp;-&nbsp;
     {end ? dateFormatter.format(end) : <i>now</i>}
     &nbsp;&mdash;&nbsp;

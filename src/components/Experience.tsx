@@ -44,10 +44,10 @@ export const Experience = ({
   const { theme } = useTheme();
 
   return (
-    <div {...rest}>
+    <article {...rest}>
       <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 dark:border-slate-200 print:py-1">
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="flex flex-wrap gap-x-4 text-lg">
+          <h1 className="flex flex-wrap gap-x-4 text-lg">
             <div className="font-bold">
               {Array.isArray(position) ? (
                 <div>
@@ -91,7 +91,7 @@ export const Experience = ({
                 <SkillTag kind={theme} full skill={positionType} />
               </div>
             )}
-          </div>
+          </h1>
 
           <ExperienceDateRange
             className="text-gray-600 dark:text-gray-400 text-sm"
@@ -109,9 +109,9 @@ export const Experience = ({
         </div>
       )} */}
       </div>
-      <div className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 dark:border-slate-600 print:border-none print:pt-0">
+      <p className="pl-4 py-2 ml-[2px] text-sm border-l-1 border-slate-400 dark:border-slate-600 print:border-none print:pt-0">
         {children}
-      </div>
-    </div>
+      </p>
+    </article>
   );
 };

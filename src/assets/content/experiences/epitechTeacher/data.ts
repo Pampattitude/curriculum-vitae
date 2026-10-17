@@ -6,7 +6,7 @@ export const data: ExperienceProps = {
   position: ["Permanent Teaching Assistant", "Written Expression Assistant"],
   positionType: "pedagogy",
   company: "Epitech",
-  companyUrl: "https://www.epitech.eu",
+  companyUrl: "https://www.epitech.eu/",
   companyLogo,
   dates: {
     start: new Date("2011-05"),
