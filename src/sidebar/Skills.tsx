@@ -1,80 +1,40 @@
+// import {
+//   KNOWN_SKILL_KIND_PRETTY,
+//   KNOWN_SKILLS_BY_KIND,
+//   KnownSkillKind,
+// } from "../components/KnownSkills";
+import { KNOWN_SKILLS, KnownSkillKey } from "../components/KnownSkills";
 import { SkillTag } from "../components/SkillTag";
 
 export const Skills = () => (
-  <div className="print:hidden flex flex-col gap-1">
+  <div className="flex flex-col gap-1">
     <h2 className="section-title">Skills</h2>
 
-    <section>
-      <h3>Methodology</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="scrum" />
-        <SkillTag skill="kanban" />
-        <SkillTag skill="smart" />
-        <SkillTag skill="okr" />
-        <SkillTag skill="car" />
-      </div>
+    <section className="flex flex-wrap gap-x-2 gap-y-1 px-4 py-2 print:px-0">
+      {(Object.keys(KNOWN_SKILLS) as KnownSkillKey[])
+        .filter((k) => (KNOWN_SKILLS[k] as { visible?: boolean }).visible)
+        .map((k) => (
+          <SkillTag key={`${KNOWN_SKILLS[k]}`} skill={k} />
+        ))}
     </section>
 
-    <section>
-      <h3>Project support</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="notion" />
-        <SkillTag skill="gSheets" />
-        <SkillTag skill="jira" />
-        <SkillTag skill="cultureAmp" />
-        <SkillTag skill="dustAi" />
-      </div>
-    </section>
-
-    <section>
-      <h3>Cloud providers</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="aws" />
-        <SkillTag skill="gcp" />
-      </div>
-    </section>
-
-    <section>
-      <h3>Languages</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="ts" />
-        <SkillTag skill="js" />
-      </div>
-    </section>
-
-    <section>
-      <h3>Frameworks</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="react" />
-      </div>
-    </section>
-
-    <section>
-      <h3>Databases</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="pgsql" />
-        <SkillTag skill="mongo" />
-        <SkillTag skill="bigQuery" />
-      </div>
-    </section>
-
-    <section>
-      <h3>Tools</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="docker" />
-        <SkillTag skill="kube" />
-        <SkillTag skill="terraform" />
-      </div>
-    </section>
-
-    <section>
-      <h3>Soft skills</h3>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <SkillTag skill="strategy" />
-        <SkillTag skill="management" />
-        <SkillTag skill="leadership" />
-        <SkillTag skill="pedagogy" />
-      </div>
-    </section>
+    {/* {(Object.keys(KNOWN_SKILLS_BY_KIND) as KnownSkillKind[])
+      .filter((skillKind) =>
+        KNOWN_SKILLS_BY_KIND[skillKind].some(
+          (skill) => (skill as { visible?: boolean }).visible === true,
+        ),
+      )
+      .map((k) => (
+        <section key={k.toString()}>
+          <h3>{KNOWN_SKILL_KIND_PRETTY[k]}</h3>
+          <div className="flex flex-wrap gap-x-2 gap-y-1">
+            {KNOWN_SKILLS_BY_KIND[k]
+              .filter((skill) => (skill as { visible?: boolean }).visible)
+              .map((skill) => (
+                <SkillTag key={`${k}-${skill.name}`} skill={skill.key} />
+              ))}
+          </div>
+        </section>
+      ))} */}
   </div>
 );

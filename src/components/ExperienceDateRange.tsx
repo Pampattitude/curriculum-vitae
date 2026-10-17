@@ -5,6 +5,7 @@ export type ExperienceDateRangeProps = {
 };
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "2-digit",
   year: "numeric",
 });
 

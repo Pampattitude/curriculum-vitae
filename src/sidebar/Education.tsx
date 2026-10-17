@@ -8,7 +8,7 @@ export const Education = () => (
   <div>
     <h2 className="section-title">Education</h2>
 
-    <div className="px-4 py-2">
+    <div className="px-4 py-2 print:px-0">
       <div className="flex justify-between gap-2">
         <div>
           <a
