@@ -182,7 +182,14 @@ export const KNOWN_SKILLS = {
     value: 0.8,
     visible: true,
   },
-  pedagogy: { name: "Pedagogy", kind: "soft", value: 0.9, visible: true },
+  mentor: {
+    name: "Mentoring",
+    abbr: "Mentor",
+    kind: "soft",
+    value: 0.9,
+    visible: true,
+  },
+  pedagogy: { name: "Pedagogy", kind: "soft", value: 0.9 },
 
   development: {
     name: "Development",
