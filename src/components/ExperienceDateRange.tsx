@@ -1,5 +1,6 @@
 export type ExperienceDateRangeProps = {
   dates: { start: Date; end?: Date };
+  yearOnly?: boolean;
 } & {
   className?: string;
 };
@@ -9,10 +10,14 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
+const dateFormatterYear = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+});
+
 const formatDateDiff = (start: Date, end: Date) => {
   const diff = (end.getTime() - start.getTime()) / 1000 / 60 / 60 / 24 / 365.25;
 
-  if (diff < 6 / 12 /*2mo*/) {
+  if (diff < 8 / 12 /*2mo*/) {
     return "less than a year";
   }
 
@@ -28,12 +33,20 @@ const formatDateDiff = (start: Date, end: Date) => {
 
 export const ExperienceDateRange = ({
   dates: { start, end },
+  yearOnly = false,
   ...rest
-}: ExperienceDateRangeProps) => (
-  <div {...rest} className={`dateline ${rest.className}`}>
-    {dateFormatter.format(start)}&nbsp;-&nbsp;
-    {end ? dateFormatter.format(end) : <i>now</i>}
-    &nbsp;&mdash;&nbsp;
-    {formatDateDiff(start, end ?? new Date())}
-  </div>
-);
+}: ExperienceDateRangeProps) => {
+  const formatter = yearOnly ? dateFormatterYear : dateFormatter;
+  return (
+    <div {...rest} className={`dateline ${rest.className}`}>
+      {formatter.format(start)}&nbsp;-&nbsp;
+      {end ? formatter.format(end) : <i>now</i>}
+      {!yearOnly ? (
+        <>
+          &nbsp;&mdash;&nbsp;
+          {formatDateDiff(start, end ?? new Date())}
+        </>
+      ) : null}
+    </div>
+  );
+};

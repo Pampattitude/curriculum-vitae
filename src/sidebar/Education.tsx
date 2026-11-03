@@ -1,8 +1,7 @@
 import { epitech } from "../assets/content/education/epitech";
 import { Brand } from "../components/Brand";
+import { ExperienceDateRange } from "../components/ExperienceDateRange";
 import { Md } from "../components/Md";
-
-import epitechLogo from "../assets/content/education/epitech/logo.webp";
 
 export const Education = () => (
   <div>
@@ -14,13 +13,22 @@ export const Education = () => (
           <a
             className="inline-flex flex-nowrap gap-1 items-center"
             target="_blank"
-            href="https://epitech.eu/"
+            href={epitech.companyUrl}
           >
-            <Brand className="mr-1 print:hidden" src={epitechLogo} alt="Logo" />
-            <span className="inline-block">Epitech</span>
+            <Brand
+              className="mr-1 print:hidden"
+              src={epitech.companyLogo}
+              alt="Logo"
+            />
+            <span className="inline-block">{epitech.company}</span>
           </a>
         </div>
-        <div className="text-gray-300 text-sm">2008&nbsp;&mdash;&nbsp;2013</div>
+
+        <ExperienceDateRange
+          className="text-gray-600 dark:text-gray-400 text-sm"
+          dates={epitech.dates}
+          yearOnly
+        />
       </div>
       <div className="text-sm">
         <Md>{epitech.content}</Md>

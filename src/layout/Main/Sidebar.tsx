@@ -1,4 +1,5 @@
 import { Contact } from "../../sidebar/Contact";
+import { Entrepreneurship } from "../../sidebar/Entrepreneurship";
 import { Education } from "../../sidebar/Education";
 import { Languages } from "../../sidebar/Languages";
 import { Skills } from "../../sidebar/Skills";
@@ -7,7 +8,10 @@ export const Sidebar = () => (
   <nav className="print:border-t-2 print:mt-4 border-slate-800 dark:border-slate-200 dark:bg-gray-900 w-full lg:max-w-sm sticky top-0 self-start flex flex-col gap-2 px-4 py-2 grow-0 shrink-0">
     <Skills />
     <Languages />
-    <Education />
+    <div className="print:w-full print:grid print:grid-cols-2 print:gap-8">
+      <Entrepreneurship />
+      <Education />
+    </div>
     <Contact />
   </nav>
 );

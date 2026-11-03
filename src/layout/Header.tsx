@@ -3,6 +3,7 @@ import { Md } from "../components/Md";
 
 import picture from "/picture.webp?url";
 import { useTheme } from "../context/theme";
+import { Contact } from "../sidebar/Contact";
 
 export const Header = () => {
   const { theme, setTheme } = useTheme();

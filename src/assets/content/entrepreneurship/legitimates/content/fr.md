@@ -1,0 +1,1 @@
+Investissement et consulting; **co-fondateur**

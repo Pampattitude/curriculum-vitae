@@ -9,7 +9,7 @@ export const data: ExperienceProps = {
   companyUrl: "https://legitimates.fr/",
   companyLogo,
   dates: {
-    start: new Date("2024-02"),
+    start: new Date("2026-05"),
   },
   location: "Paris, FR",
   tags: ["entrepreneurship", "investment", "consulting", "leadership"],

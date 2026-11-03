@@ -47,7 +47,7 @@ export const Experience = ({
     <article {...rest}>
       <div className="relative flex flex-col gap-0.5 py-2 pl-4 ml-[2px] border-l-4 border-slate-800 dark:border-slate-200 print:py-1">
         <div className="flex flex-col lg:flex-row justify-between">
-          <h1 className="flex flex-wrap gap-x-4 text-lg">
+          <h1 className="flex flex-wrap gap-x-4 text-lg print:text-md">
             <div className="font-bold">
               {Array.isArray(position) ? (
                 <div>
